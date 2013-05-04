@@ -1,0 +1,106 @@
+---
+layout: page
+---
+
+<!--art title start-->
+<div id="content">
+<h1 class="lost-pagetit">{{page.title}}</h1>
+<!--art title end-->
+
+<!--art content start-->
+<article itemscope="" itemtype="http://schema.org/Article" class="lost-post">
+<br>
+ {{ content }}
+</article>
+</div>
+<!--art content end-->
+
+<!-- author info start -->
+<blockquote class="subtitle">
+    标题：{{page.title}} <br>
+    作者: {{site.author_info}}  {{page.date|date:"%Y-%m-%d"}}　<br>
+	出处: <a href="{{page.url}}" rel="bookmark" title="{{page.title}}">{{site.url}}{{page.url}}</a><br>
+	<span style="color: #777">说明：转载、投稿、翻译类文章版权信息以正文标注为准</span><br>
+	分类: <a href="/categories" title="查看  中的全部文章" rel="category tag">{{page.categories}}</a>&nbsp;&nbsp;&nbsp;&nbsp;标签: <a href="/tags" rel="tag">{{page.tags}}</a></blockquote>
+<!-- author info end -->
+
+<!--前后篇文章导航 start-->
+<section class="lost-nextpage fn-clear">
+{% if page.next %}
+  <div class="lost-nextpage-left"><i class="icon-circle-arrow-left"></i>&nbsp;<a href="{{page.next.url}}" rel="prev" title="{{page.next.title}}">前一篇：{{page.next.title}}</a></div>
+{% else %}
+  <div class="lost-nextpage-left"></div>
+{% endif %}
+{% if page.previous %}
+  <div class="lost-nextpage-right"><i class="icon-circle-arrow-right"></i>&nbsp;<a href="{{page.previous.url}}" rel="next" title="{{page.previous.title}}">后一篇：{{page.previous.title}}</a></div>
+{% else %}
+  <div class="lost-nextpage-right"></div>
+{% endif %}
+</section>
+<hr>
+<!--前后篇文章导航 end-->
+
+<!-- art menu start -->
+<script src="/js/post.js" type="text/javascript"></script>
+<!-- art menu end -->
+
+<!-- JiaThis Button BEGIN -->
+<div class="jiathis_style_32x32">
+<a class="jiathis_button_qzone"></a>
+<a class="jiathis_button_tsina"></a>
+<a class="jiathis_button_tqq"></a>
+<a class="jiathis_button_weixin"></a>
+<a class="jiathis_button_renren"></a>
+<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1363314728181964" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+<!-- Wumii releated start -->
+<script type="text/javascript" id="wumiiRelatedItems"></script>
+<script type="text/javascript">
+    var wumiiPermaLink = "{{site.url}}{{page.url}}"; //请用代码生成文章永久的链接
+    var wumiiTitle = "{{page.title}}"; //请用代码生成文章标题
+    var wumiiTags = "{{page.tags}}"; //请用代码生成文章标签，以英文逗号分隔，如："标签1,标签2"
+    var wumiiSitePrefix = "{{site.url}}";
+    var wumiiParams = "&num=5&mode=3&pf=JAVASCRIPT";
+</script>
+<script type="text/javascript" src="http://widget.wumii.com/ext/relatedItemsWidget"></script>
+<a href="http://www.wumii.com/widget/relatedItems" style="border:0;">
+    <img src="http://static.wumii.cn/images/pixel.png" alt="无觅相关文章插件，快速提升流量" style="border:0;padding:0;margin:0;" />
+</a>
+<!-- Wumii releated end -->
+
+<!--相关文章 star-->
+<!--section class="fn-clear">
+  <h2>相关文章:</h2>
+  <ul>
+    {% for post in site.related_posts %}
+    <li class="related">
+      <time datetime="{{ page.date|date:"%Y-%m-%d" }}">{{ page.date|date:"%Y-%m-%d" }}</time>
+      --- <a href="{{post.url}}">{{post.title}}</a> </li>
+    {% endfor %}
+  </ul>
+</section -->
+<!--相关文章 end-->
+
+<!-- Duoshuo Comment BEGIN -->
+<div class="ds-thread"></div>
+<script type="text/javascript">
+    var duoshuoQuery = {short_name:"novawoo"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = 'http://static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		|| document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+</script>
+<!-- Duoshuo Comment END -->
+
+<!-- UJian Button BEGIN -->
+<script type="text/javascript" src="http://v1.ujian.cc/code/ujian.js?type=slide&fade=1&uid=1773325"></script>
+<a href="http://www.ujian.cc" style="border:0;"><img src="http://img.ujian.cc/pixel.png" alt="友荐云推荐" style="border:0;padding:0;margin:0;" /></a>
+<!-- UJian Button END -->
