@@ -34,7 +34,7 @@ body{
     word-spacing:1px;
     margin-left:auto;
     margin-right:auto;
-    font-family:"Galdeano","Hiragino Sans GB","Microsoft YaHei","Trebuchet","Trebuchet MS","Tahoma","Lucida Grande","Lucida Sans Unicode","Verdana","sans-serif";
+    font-family:"Hiragino Sans GB","Microsoft YaHei","Trebuchet","Trebuchet MS","Tahoma","Lucida Grande","Lucida Sans Unicode","Verdana","sans-serif";
 }
 
 /*************************
@@ -67,7 +67,7 @@ sub { bottom: -0.25em; }
 a { color: #065588; font-size:  100%; }
 a:hover { text-decoration: underline; }
 
-h1,h2,h3,h4,h5,h6{font-family:"Cuprum","Hiragino Sans GB","Microsoft YaHei",sans-serif;}
+h1,h2,h3,h4,h5,h6{font-family:"Hiragino Sans GB","Microsoft YaHei",sans-serif;}
 
 ins, a { text-decoration: none; }
 u, .lost-u { text-decoration: underline; }
@@ -402,7 +402,8 @@ pre code, .highlight code{margin: 0; padding: 0; background-color: transparent; 
 }
 
 .violet-logo { float: left; position: relative; width: 66px; height: 66px; margin: 20px 0 12px 0px; -moz-border-radius: 33px 33px; -webkit-border-radius: 33px 33px; -o-border-radius: 33px 33px; border-radius: 33px 33px; }
-.violet-site { float: left; margin: 20px 0 12px 1px; position: relative; width: 160px; color: #525252; }
+.violet-site { float: left; margin: 20px 0 12px 1px; position: relative; width: 180px; color: #525252;
+ }
 .violet-site h1, .violet-site h1 a { font-size: 32px; font-weight: normal; color: #525252; margin-bottom: 0;}
 .violet-site h1 a:hover { color: #323232; text-decoration: none; }
 .violet-site h1 span { display: inline; padding: 0px 5px 0 3px; position: relative; line-height: 12px; font-size: 10px; color: #525252; background: #d8d8d8; border-radius: 7px 0px 7px 0; top: -23px; left: 5px; font-weight: 600;}
