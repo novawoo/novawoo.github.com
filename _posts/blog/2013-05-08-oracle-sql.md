@@ -10,14 +10,15 @@ tags:
 ## 1. 简介
 ### 1.1 Oracle公司介绍
 
-+ 全球第一大数据库厂商
-+ 全球第二大独立软件供应商
-+ 旗下产品有：Oracle数据库、Mysql数据库、Java等
+<li>全球第一大数据库厂商</li>
+<li>全球第二大独立软件供应商</li>
+<li>旗下产品有：Oracle数据库、Mysql数据库、Java等</li>
+<br>
 
 ### 1.2 DB、DBMS、RDBMS
 
 - DB -- DataBase 数据库  
-- DBMS -- DataBase Management System 数据库关联系统  
+- DBMS -- DataBase Management System 数据库管理系统  
 - RDMBMS -- Relationship Database Management System 关系型数据库管理系统  
 - 常用的RDBMS有：  
     - Oracle 10g/11g(Oracle)  
@@ -28,22 +29,26 @@ tags:
 
 ### 1.3 Oracle DBA认证
 >DBA -- 数据库管理员
-- Oracle DBA认证包括：
-    - oca 初级认证
-    - ocp 专家级认证
-    - ocm 大师认证
+
+- Oracle DBA认证包括：  
+    - oca 初级认证  
+    - ocp 专家级认证  
+    - ocm 大师认证  
 
 ### 1.4 SQL语言介绍
   SQL(Structured Query Language)结构化查询语言，包括：
 
 - 数据定义语言(DDL Data Definition Language)  
-        eg:create、drop、revoke、grant等  
+        eg:create、drop、alter、rename等  
 - 数据操作语言(DML Data Manipulation Language)  
-        eg:select、insert、delete、update等  
+        eg:insert、delete、update等  
 - 事务控制语言(Transaction Control Language)  
         eg:commit、savepoint、rollback等  
-- 数据查询语言(DQL Data Query Language)
+- 数据查询语言(DQL Data Query Language)  
+        eg:select  
 - 数据控制语言(DCL Data Control Language)
+        用于设置或更改数据库用户或角色的语句  
+        eg:grant、revoke、password
 
 ## 2. Oracle安装
   安装后会自动生成 sys 和 system用户:
@@ -125,21 +130,32 @@ sql>edit d:\a.sql
   ...
  
 ### 4.4 显示和设置环境变量
-  概述：可以用来控制输出的各种格式，set show 如果希望永久的保存相关的设置，可以去修改 glogin.sql 脚本
+概述：可以用来控制输出的各种格式，set show 如果希望永久的保存相关的设置，可以去修改 glogin.sql 脚本
 
-1. linesize
-  说明：设置显示行的宽度，默认是80个字符
-  案例：sql>show linesize
-        sql>set linesize 90
-2. pagesize
+1. linesize  
+说明：设置显示行的宽度，默认是80个字符  
+案例：
+<pre class="brush:sql">
+sql>show linesize
+sql>set linesize 90
+</pre>
+2. pagesize  
   说明：设置每页显示的行数目，默认是14，用法和linesize一样
-3. timing
-  说明：显示sql执行操作所消耗的时间
-  用法：set timing on；
-  session中的参数：
-  alter session set nls_date_format='yyyy-mm-dd hh24:mi:ss';
-  alter session set nls_language='american';
-  alter session set nls_territory=america;
+3. timing  
+说明：显示sql执行操作所消耗的时间  
+用法：set timing on；  
+session中常用的其他参数：  
+<pre class="brush:sql">
+sql>alter session set nls_date_format='yyyy-mm-dd hh24:mi:ss';
+sql>alter session set nls_language='american';
+sql>alter session set nls_territory=america;
+</pre>
+4. 显示环境变量的值  
+用法：echo $环境变量的名称  
+案例：
+<pre class="brush:sql">
+sql>echo $NLS_DATA_FORMART
+</pre>
 
 ## 5. 需要了解的oracle概念
 ### 5.1 Oracle权限
@@ -164,25 +180,35 @@ sql>edit d:\a.sql
 ### 5.3 角色
   概述：角色是一系列权限的集合
 ####分类
-  >角色
+<pre>
+  角色
    |-预定义角色
    |     如：connect
-  > |-自定义角色
+   |-自定义角色
+</pre>
 ####常用角色：
     connect：7种基本权限
     dba：数据库管理员权限
     resource：在任何一个表空间建表
     
 ### 5.4 权限传递
-  grant [privilege] on [tableName] to [userName] [with grant option]
-  grant [roleNmae] to [username] [with admin option]
-  用户通过权限传递获得的权限，在授权者的权限被回收后，对应的权限也被回收
+<pre class="brush:sql">
+sql>grant [privilege] on [tableName] to [userName] [with grant option]
+sql>grant [roleNmae] to [username] [with admin option]
+</pre>
+__用户通过权限传递获得的权限，在授权者的权限被回收后，对应的权限也被回收__
 
 ## 6. Oracle用户管理
 ### 6.1 创建用户
-  概述：在Oracle中要创建一个新的用户使用 create user 语句，一般是具有dba的权限才能使用。
-  用法：create user [username] identified by [passwd]
-  案例：create user xiaoming identified by pw123
+概述：在Oracle中要创建一个新的用户使用 `create user` 语句，一般是具有dba的权限才能使用。  
+用法：
+<pre class="brush:sql">
+sql>create user [username] identified by [passwd]
+</pre>
+案例：
+<pre class="brush:sql">
+sql>create user xiaoming identified by pw123
+</pre>
 ### 6.2 修改密码
   用法：
 <pre class="brush:sql">
@@ -192,9 +218,9 @@ sql>passwrod [yourUserName]
 sql>alter user [userName] identified by [newPWD]
 </pre>
 ### 6.3 删除用户
-  概述：一般以dba的身份去删除某个用户，如果用其他用户去删除用户则需要具有drop user的权限  
+  概述：一般以dba的身份去删除某个用户，如果用其他用户去删除用户则需要具有`drop user`的权限  
   用法：`drop user [username] [cascade]`  
-  用法说明：在删除用户时，注意如果要删除的用户已经创建了表，那么就需要在删除时带一个参数 cascade，表示将该用户创建的表一起删除，称为级联删除
+  用法说明：在删除用户时，注意如果要删除的用户已经创建了表，那么就需要在删除时带一个参数 cascade，表示将该用户创建的表一起删除，称为 __级联删除__
 ### 6.4 用户授权
 概述：创建的新用户是没有任何权限的，甚至连登录数据库的权 限都没有，需要为其指定相应的权限。给一个用户赋权限使用命令`grant`，回收权限使用命令`revoke`  
 ####授权：
@@ -260,7 +286,7 @@ sql>drop profile password_history cascade
 ### 7.2 oracle支持的数据类型
 ####字符型
   `char` 定长 最大2000字符 可能浪费空间，但查询速度快  
-  `varchar2` oracle特有类型变长 最大4000字符 节省空间，但查询速度慢  
+  `varchar2` oracle特有类型 变长 最大4000字符 节省空间，但查询速度慢  
   `clob` 字符型大对象 最大4G
 ####数字类型
   `number` 范围 -10的38次方 至 10的38次方，可以表示整数，也可以表示小数  
@@ -316,8 +342,9 @@ sql>alter table student
 sql>alter table student 
     drop constraint student_pk;
 </pre>
-#### 7.4.9 删除一个约束
-先删除约束，再添加约束
+#### 7.4.9 修改一个约束
+先删除约束，再添加约束  
+__非空约束__ 的修改特殊，使用 `alter table student modify (classid null)`
 
 ### 7.5 修改数据
 #### 7.5.1 添加数据
@@ -358,11 +385,14 @@ sql>rename test to test2
 </pre>
 ### 7.7 删除表
 <pre class="brush:sql">
-sql>drop table student;
+sql>drop table tablename [cascade constraints] [purge];
 </pre>
-
+说明：`cascade constraints` -- 级联删除（先删constraint关系，再删表）  
+`purge` -- Oracle 10g的新特性，用于彻底删除表
 ### 7.8 约束(constraint)
 #### 7.8.1 约束的作用
+限制无效数据进入到表中
+
 #### 7.8.2 约束的类型
 - primary key(PK) 主键约束
 - unique key(UK) 唯一键约束
@@ -397,7 +427,7 @@ sql>create table parent(
 sql>alter table parent
     add constraint parent_c1_pk primary key(c1);
 </pre>
-- 列级和表级约束的比较：表级约束可以用来定义联合主键
+- 列级和表级约束的比较： __表级约束可以用来定义联合主键__
 <pre class="brush:sql">
 sql>create table parent(
        c1 number(2),
@@ -443,7 +473,7 @@ sql>create table parent(
 #### 7.8.6 外键约束(FK)
 作用：
 
-- 解决一对多关系，保证一对多关系的实现
+- 保证一对多关系的实现
 - 通过外键(FK)可以与同一张表的主键(PK)或唯一键(UK)建立引用关系，也可以与不同表的主键(PK)或唯一键(UK)建立引用关系
 - 外键的取值必须匹配父表中已有的值或空值
 
@@ -456,8 +486,8 @@ sql>create table parent(
        );
    sql>create table child2(
        c1 number(3),
-       c2 number(2),
-       constraint child2_c2_fk references parent(c1) on delete set null
+       c2 number(2) constraint child_c2_fk 
+          references parent(c1) on delete set null
        );
 </pre>
 - 表级约束
@@ -477,18 +507,17 @@ sql>create table parent(
 说明：
 >- foreign key 用表级约束定义外键时使用该关键字
 >- references 表示引用父表中的某列
->- on delete cascade 级联删除，删除父表的记录前，先删除子表里的相关记录
+>- on delete cascade 级联删除，删除父表的记录前，先删除子表与父表的级联关系
 >- on delete set null 删除父表的记录前，先将子表中外键列的相关值置空
-
 
 *主外键关联中的删除*
 <pre class="brush:sql">
-sql>drop table parents cascade constraints purge;
+sql>drop table parents cascade constraints;
 </pre>
-  等价于：
+等价于：
 <pre class="brush:sql">
 sql>alter table child drop constraints child_c2_fk;
-    drop table parent;
+sql>drop table parent;
 </pre>
 
 #### 7.8.7 检查约束(CK)
@@ -500,6 +529,7 @@ sql>alter table child drop constraints child_c2_fk;
 >- 引用其他记录的其他值
 
 #####定义：
+
 - 列级约束
 <pre class="brush:sql">
    sql>create table test(
@@ -507,6 +537,7 @@ sql>alter table child drop constraints child_c2_fk;
        c2 number(3) constraint test_c2_ck check (c2>100)
        );
 </pre>
+
 - 表级约束
 <pre class="brush:sql">
    sql>create table test(
@@ -518,8 +549,9 @@ sql>alter table child drop constraints child_c2_fk;
 </pre>
 
 #### 7.8.8 约束部分小结
+
 - 定义约束时用户给他命名，若用户未命名，系统自动命名(形式为SYS_Cn格式)
-- 何时创建约束
+- 何时创建约束  
     - create table时定义约束
     - 表已经存在，用alter table追加约束
 - 一个列上可以有多个约束
@@ -532,85 +564,277 @@ sql>create synonym account from tarena.account;
 </pre>
 
 ## 8. acle表基本查询
-### 8.1 查看表结构
+### 8.1 sql语句的处理过程
+![sql语句的处理过](/images/sql-in-oracle/01-oracle-process.jpg)
+
+### 8.2 sql是非大小写敏感的
+sql语句是非大小写敏感的，但是sql中的字符串是大写写敏感的。
+
+### 8.3 查看表结构
 <pre class="brush:sql">
 sql>desc dept;
 </pre>
-### 8.2 查询所有列
+### 8.4 查询所有列
 <pre class="brush:sql">
 sql>select * from dept;
 </pre>
-### 8.3 查询指定列
+### 8.5 查询指定列
 <pre class="brush:sql">
 sql>select ename,sal,job from emp;
 </pre>
 说明：查指定列的效率比查所有列的效率高很多
-### 8.4 取消重复行
-<pre class="brush:sql">
-sql>select distinct deptno,job from emp;
-</pre>
-### 8.5 使用数学表达式
+
+### 8.6 使用数学表达式
 <pre class="brush:sql">
 sql>select (sal+comm)*13 年工资,ename,comm from emp;
 </pre>
-### 8.6 处理null值
-- 表达式中有null值，整个表达式的值就为null值
+
+### 8.7 给列起别名
+说明：给列起别名能够改变一个列、表达式的标识
+用法：`select columu [as] alias from table`
+例如：
+<pre class="brush:sql">
+sql>select ename,sal*12 年薪 from emp order by 年薪;
+</pre>
+
+### 8.8 空值(null)
+空值(null)在输入数据时，该字段没有指定值，并且也没有缺省值
+
+- 空值不等于0
+- 空值不等于空格
+- 算术表达式中包含空值将导致结果为空
+- 在算术表达式中包含空值需要用空值转换函数(nvl)处理
+
+### 8.9 处理空值
 - 使用`is null`操作符判断null值
 - 使用`nvl(ori,des)`函数对null值进行转
 
+>nvl(arg1,arg2)中，arg1与arg2的类型要相同
+
+例如：
 <pre class="brush:sql">
 sql>select (sal+nvl(comm,0))*13 年工资,ename,comm from emp;
 </pre>
 
-### 8.7 使用where子句
-  多条件时可以根据逻辑，使用 and 或 or 来连接多个条件
-  
-### 8.8 使用like操作符
-  % 表示0到多个任意字符
-  _ 表示单个字符
-  
-### 8.9 使用逻辑操作符号
-  () and or > < = 
-  
-### 8.10 使用order by子句
+### 8.10 拼接运算符(||)
+使用`||`可以将某几列或某几列与字符串拼接在一起  
+用法：
+<pre class="brush:sql">
+sql>select colname1||colname2 from tabname;
+</pre>
+
+### 8.11 去除重复行(distinct)
+说明：`select`后面跟`distinct`关键字去掉重复行，若后面为多列，所有列联合起来唯一  
+例如：
+<pre class="brush:sql">
+sql>select distinct deptno,job from emp;
+</pre>
+
+### 8.12 使用where子句
+说明：where子句可以对表里的记录进行过滤，where子句后可以跟一个或多个条件表达式(多个表达式间用`and`、`or`连接，也可以通过小括号改变顺序)，不能跟列别名  
+用法：
+<pre class="brush:sql">
+sql>select colname1, ... from tabname
+    where colname1's expression = value
+    and colname2 > value
+    or colname3 < value;
+</pre>
+### 8.13 比较和逻辑运算符
+- 比较运算符  
+  `>` `>=` `<` `<=` `=`
+- sql比较运算符  
+  `between and`  
+  `in`  
+  `like`  
+  `is null`  
+- 逻辑运算符  
+  `and`  
+  `or`  
+  `not`  
+- 比较运算符否定形式  
+  `<>`  `!=`  `^=`
+- SQL比较运算符否定形式  
+  `not between and`  
+  `not in`  
+  `not like`  
+  `is not null`  
+
+### 8.14 between and运算符
+说明：表示大于等于并且小于等于  
+用法：
+<pre class="brush:sql">
+sql>select colname, ... from tabname
+    where colname between val1 and val2;
+</pre>
+
+### 8.15 in运算符
+说明：in表示一个集合，是离散值。表示等于其中任意一个值。  
+用法：
+<pre class="brush:sql">
+sql>select colname, ... from tabname
+    where colname in (val1,val2,val3,...);
+</pre>
+
+### 8.16 like运算符
+说明：在字符串比较中，可以用like和通配符进行查找  
+>通配符种类：  
+  % 表示0到多个任意字符  
+>_ 表示单个字符  
+>
+>若要查找通配符本身，需要使用`escape`进行转义
+
+用法：
+<pre class="brush:sql">
+sql>select colname, ... from tabname
+    where colname like 'W\_%' escape '\';
+</pre>
+
+### 8.17 使用order by子句
+说明：
+
+- 用order by子句对查询出来的结果集进行排序。  
+- order by后面可以跟列名、表达式、别名、位置  
+- null值中排序中的显示：升序显示在最后，降序显示在最前  
+
+用法：
+<pre class="brush:sql">
+  sql>select colname1,... from tabname
+      order by colname2 [asc|desc]
+      --asc 默认，升序
+      --desc 降序
+</pre>
+例如：
 <pre class="brush:sql">
   sql>select ename,deptno,sal from emp order by deptno,sal desc
 </pre>
 
-### 8.11 使用列的别名排序
+### 8.18 分支(case when语句和decode函数)
+####CASE WHEN 语句
+说明：
+
+- 寻找when的优先级:从上到下
+- 再多的when,也只有一个出口，即其中有一个满足条件就马上退出case
+- else_expr和return_expr的数据类型必须相同
+
+用法：  
 <pre class="brush:sql">
-	sql>select ename,sal*12 年薪 from emp order by 年薪;
+CASE WHEN condition THEN return_expr
+    [WHEN condition THEN return_expr]
+     ... ...
+     ELSE else_expr
+END
+</pre>
+例如：
+<pre class="brush:sql">
+select case when base_duration = 20 then unit_cost + 0.05
+            when base_duration = 40 then unit_cost + 0.03
+       else unit_cost
+       end new_unit_cost,
+       base_duration,
+       unit_cost
+from cost;
 </pre>
 
-###在where条件中使用in
+###DECODE -- 简版的CASE WHEN
+用法：
+<pre class="brush:sql">
+select DECODE(colname1,condition1,value1,
+                      [condition2,value2,]
+                       ... ...
+                       valueN)
+from tabname;
+</pre>
+说明：表示如果colname1等于condition1时,DECODE函数的结果为value1,... ...,如果不等于任何一个condition，则DECODE函数的结果为valueN。  
+例子：
+<pre class="brush:sql">
+select decode(base_duration,20,unit_cost+0.05,
+                            40,unit_cost+0.03,
+                            unit_cost) new_unit_cost,
+       base_duration,
+       unit_cost
+from cost;
+</pre>
 
 ## 9. Oracle表复杂查询
 ### 9.1 数据分组
-  max min avg sum count
 #### 9.1.1 分组函数
-#### 9.1.2 group by 和 having子句
-`group by`用于对查询的结果分组统计  
-`having`子句用于限制分组显示结果
+组函数操作在一组行记录上，每组返回一个结果，常用的组函数有:  
+  `max` `min` `avg` `sum` `count`
+> - 缺省情况组函数处理所有的非空值
+> - 当组函数要处理的所有值都为null，count函数返回0,其他函数返回null
+
+用法：
 <pre class="brush:sql">
-sql>select deptno,avg(sal)
-	from emp
-	group by deptno
-	having avg(sal)<2000;
+sql>select COUNT(DISTINCT colname)
+	from tabname;
 </pre>
-### 9.1.3 数据分组总结
+
+#### 9.1.2 group by 和 having子句
+用法：
+<pre class="brush:sql">
+sql>select colname,group_function
+    from tabname
+    where condition
+    group by group_by_expression
+    having group_condition
+    order by column;
+</pre>
+
+#### 9.1.3 where和having的区别
+- where子句过滤的是行
+- having子句过滤的是分组
+- where子句后面可以跟任意列名、单行函数、不能跟组函数
+- having子句只能包含group by后面的表达式和组函数
+- where子句执行在前，having子句执行在后
+- where子句和having子句都不允许用别名
+
+#### 9.1.4 数据分组小结
 - 分组函数只能出现在选择列表、having、order by子句中
 - 如果在select语句中同时包含有group by，having，order by那么他们的顺序是group by，having，order by
 - 在选择列中如果有列、表达式、分组函数，那么这些列和表达式必须有一个出现在group by子句中，否则就会出错
 
 ### 9.2 子查询
-  说明：子查询是指嵌入在其它sql语句中的select语句，也叫嵌套查询
-#### 9.2.1 非关联子查询
-#### 9.2.2 关联子查询
+#### 9.2.1 什么是子查询
+子查询是指嵌入在其它sql语句中的select语句，也叫嵌套查询
+
+#### 9.2.2 非关联子查询和关联子查询
+<pre class="brush:sql">
+sql>select colname1,...
+    from tabname
+    where expr operator
+      (select colname2
+       from subtabname);
+</pre>
+
+<pre class="brush:sql">
+sql>select column1,column2,...
+    from table1 o
+    where column1 operator
+      (select column1,column2
+       from table2 i
+       where i.expr1 = o.expr2)
+    ;
+</pre>
+
+#### 9.2.3 非关联子查询的执行过程
+<li>先执行子查询，子查询的返回结果作为主查询的条件，再执行主查询</li>
+<li>子查询只执行一遍</li>
+- 若子查询的返回结果为多个值，oracle会去掉重复值之后，再将结果返回给主查询
+
+#### 9.2.4 关联子查询的执行过程
+关联子查询采用的是循环的方式，执行步骤如下：
+
+1. 外部查询得到一条记录(查询先从outer表中读取数据)并将其传入到内部查询。
+2. 内部查询基于传入的值执行。
+3. 内部查询从其结果中把值传回到外部查询，外部查询使用这些值来完成其他处理，若符合条件，outer表中得到的那条记录就放入结果集中，否则放弃，该记录不符合条件。
+4. 重复执行步骤1-3，直到把outer表中的所有记录判断一遍。
+
 #### 9.2.3 单行子查询
-  单行子查询指只返回一行数据的子查询语句
+单行子查询指只返回一行数据的子查询语句
+  
 #### 9.2.4 多行子查询
-  多行子查询指返回多行数据的子查询
-####在多行子查询中使用all操作符
+概述：多行子查询指返回多行数据的子查询
+#####在多行子查询中使用`all`操作符
 <pre class="brush:sql">
   sql>select ename,sal,deptno
       from emp
@@ -620,7 +844,7 @@ sql>select deptno,avg(sal)
          where deptno=30)
       ;
 </pre>
-####在多行子查询中使用any操作符
+#####在多行子查询中使用`any`操作符
 <pre class="brush:sql">
   sql>select ename,sal,deptno
       from emp
@@ -630,8 +854,30 @@ sql>select deptno,avg(sal)
          where deptno=30)
       ;
 </pre>
-#### 9.2.5 多列子查询
-  单行子查询是指子查询只返回单列、单行数据，多行子查询是指返回单列多行数据，都是针对单行而言的，而多行子查询则是指查询返回多个列数据的子查询语句
+
+#####在多行子查询中使用`exists`操作符
+<pre class="brush:sql">
+  sql>select a.real_name 
+      from account a 
+      where exists
+        (select 1 from service
+         where a.id = account_id);
+</pre>
+#####在多行子查询中使用`not exists`操作符
+<pre class="brush:sql">
+  sql>select a.real_name 
+      from account a 
+      where not exists
+        (select 1 from service
+         where a.id = account_id);
+</pre>
+
+####`in`和`exists`的区别
+- EXISTS是用循环的方式，由outer表的记录数决定循环的次数，对于EXISTS影响最大，所以，外表的记录数少时，EXISTS的效率高
+- IN先执行子查询，子查询的返回结果去重之后，再执行主查询，所以子查询的返回结果少时，IN的效率
+
+#### 9.2.7 多列子查询
+单行子查询是指子查询只返回单列、单行数据，多行子查询是指返回单列多行数据，都是针对单行而言的，而多行子查询则是指查询返回多个列数据的子查询语句
 <pre class="brush:sql">
   sql>select * from emp
       where (deptno,job) = 
@@ -640,7 +886,12 @@ sql>select deptno,avg(sal)
          where ename='smith')
       ;
 </pre>
-#### 9.2.6 在from子句中使用子查询
+
+#### 9.2.8 子查询与null值
+若子查询的返回结果中包含空值(null)，并且运算符为`not in`，那么整个查询不会返回任何行。任何值跟null比(包含null本身)，结果都不为true。
+
+#### 9.2.9 在from子句中使用子查询
+例子：
 <pre class="brush:sql">
   sql>select e.deptno,e.ename,e.sal
       from emp e,
@@ -651,50 +902,64 @@ sql>select deptno,avg(sal)
       and e.deptno = s.deptno
       ;
 </pre>
-   说明：在form子句中使用子查询时，该子查询会被作为一个视图来对待，因此叫作内嵌视图，当在form子句中使用子查询时，必须给子查询指定别名。
+说明：在form子句中使用子查询时，该子查询会被作为一个视图来对待，因此叫作内嵌视图，当在form子句中使用子查询时，必须给子查询指定别名。
 
 ### 9.3 多表查询
-####多表连接的种类
-  根据结果集生成的规则不同，连接可以分为三种：
-#####自连接
-  说明：自连接是指在同一张表的连接查询
-  给表起别名
-####约定
-  `驱动表`  
-  `匹配表`
-####交叉连接（cross join）
-  笛卡尔积形式  
-  规定：多表查询的条件是 至少不能少于表的个数减一
+根据结果集生成的规则不同，多表连接可以分为三种：
+> __约定__  
+>`驱动表`  
+>`匹配表`
+
+#### 9.3.1 交叉连接（cross join）
+笛卡尔积形式  
+规定：多表查询的条件是 至少不能少于表的个数减一
+用法：
 <pre class="brush:sql">
-  sql>select * from account a cross join service s;
+sql>select tabname1.colname1, tablname2.colname2
+    from tabname1 cross join tabname2;
 </pre>
-  此查询的结果集为account和service表中所有记录的组合
-####内连接（inner join）
-核心：匹配
+例子：
+<pre class="brush:sql">
+sql>select * from account a cross join service s;
+</pre>
+此查询的结果集为account和service表中所有记录的组合
+  
+#### 9.3.2 内连接（inner join）
+核心：匹配  
+用法：
+<pre class="brush:sql">
+sql>select tabname1.colname1,
+           tabname2.colname2
+    from tabname1 [INNER] JOIN tabname2
+    ON tablename1.colname1 = tabname2.colname2
+    AND tabname1.colname2 = val1;
+</pre>
+例子：
 <pre class="brush:sql">
   sql>select * from account a inner join service s
       on a.id = s.account_id 
       and a.real_name='huangr';
-  sql>select a.real_name,s.cnt
-      from account a inner join 
-        (select account_id,count(*) cnt
-         from service
-         group by account_id) s
-      on a.id = s.account_id;
 </pre>
-  第二种写法的效率优于第一种写法
-#####自连接
-  说明：内连接的表为自己称为自连接
+#####原理
+... ...
+
+#####结果集
+内连结果集为所有参与内连表的列的和
+
+#####执行顺序
+先根据ON和AND条件对要连接的表进行过滤，将过滤后的结果集进行内连接操作，再根据select语句的定义生成最终结果集。
+
 #####经典案例：
 <pre class="brush:sql">
-  sql>select t1.real_name client,
-             decode(t1.id,t2.id,'no recommender',
-                                t2.real_name) recommender
-      from account t1 join account t2
-      where nvl(t1.recommender_id,t1.id) = t2.id
+sql>select t1.real_name client,
+           decode(t1.id,t2.id,'no recommender',
+                              t2.real_name) recommender
+    from account t1 join account t2
+    where nvl(t1.recommender_id,t1.id) = t2.id
 </pre>
-####外连接（outer join）(3种)
-  核心：一个都不能少
+
+#### 9.3.3 外连接（outer join）(3种)
+核心：一个都不能少
 #####left join
 <pre class="brush:sql">
   from t1 left outer join t2
@@ -743,37 +1008,37 @@ sql>select deptno,avg(sal)
 1. 匹配问题 + 不匹配问题(一个都不能少)
 2. 不匹配问题(outer join + where 匹配表.非空列 is null)，类似于 not in ，not exists
 
+#####3表连接
+<pre class="brush:sql">
+  from t1 left join t2
+  on t1.c1 = t2.c2
+    and t2.c3 = ''
+  left join t3
+  on t3.c1 = t1.c1
+  where t2.c1 is null
+</pre>
+
 ####right join
 <pre class="brush:sql">
   from t1 right outer join t2
   on t1.c1 = t2.c2
 </pre>
-  说明：t2 是驱动表，t1 是匹配表
+说明：t2 是驱动表，t1 是匹配表
 ####full join
 <pre class="brush:sql">
   from t1 full outer join t2
   on t1.c1 = t2.c2
 </pre>
 
-####join部分的总结
+#### 9.3.4 join部分小结
 #####各类连接的应用场合
 ######交叉连接（cross join）
-  笛卡尔积
+  笛卡尔积形式，很少用
 ######内连接（inner join）
   解决匹配问题
 ######外连接（outer join）
-  解决不匹配问题
+  解决不匹配问题  
   表的所有记录出现在结果集
-#####结果集生成规则和连接表达形式
-######交叉连接（cross join）
-######内连接（inner join）
-  等值连接
-  非等值连接
-  自连接
-######外连接（outer join）
-  等值连接
-  非等值连接
-  自连接
 
 ### 9.4 合并查询
 说明：有时在实际应用中，为了合并多个select语句的结果，可以使用集合操作符号 union，union all，intersect，minus，使用这个语法进行查询的效率比在查询语句的where子句中使用and、or的效率要高，在大数据量查找时会用到。  
@@ -804,10 +1069,10 @@ sql>select ename.sal,job from emp where sal>2500
     select ename,sal,job from emp where job='manager';
 </pre>
 ### 9.5 分页查询
-###rownum
+####rownum
 说明：rownum是一个伪列，对查询返回的行号编号即行号，由1开始依次递增
 <pre class="brush:sql">
-sql>select * 
+sql>select *
     from (select a1.*,rownum rn
           from (select * from emp) a1
                 where rownum<=10)
@@ -820,7 +1085,7 @@ sql>select *
 2. 排序也只要修改最里层的子查询
 
 ## 10. oracle表查询中的函数
-###字符函数
+### 10.1 字符函数
 字符函数是oracle中最常用的函数
 
 - lower(char):将字符串转化为小写
@@ -852,7 +1117,7 @@ sql>select
 
 - rpad(str,padded_length,[pad_string]):右填充，用法与lpad相同
 
-###数学函数
+### 10.2 数学函数
 数学函数的输入参数和返回值的数据类型都是数字类型的。数学函数常用的有：
 
 - round(n,[m]):四舍五入，如果省掉m，则四舍五入到整数；如果m是正数，则四舍五入到小数点的m位后。如果m是负数，则四舍五入到小数点的m位前。
@@ -873,7 +1138,7 @@ sql>select mod(10,2)
 - floor(n):向上取整，返回小于或是等于n的最大 **整数**
 - ceil(n):向下取整，返回大于或是等于n的最小 __整数__
 
-###日期函数
+### 10.3 日期函数
 >__日期类型之间可以进行运算__
 >
 >- 对日期加减一个数字，返回值为一个日期
@@ -915,7 +1180,7 @@ sql>select ename
     where (last_day(hiredate)-hiredate)=2
 </pre>
 
-###转换函数
+### 10.4 转换函数
 转换函数用于将数据类型从一种转为另外一种。
 
 >__隐式转换__：在某些情况下，oracle server允许值的数据类型和实际的不一样，这时oracle server会隐含的转化数据类型  
@@ -959,27 +1224,28 @@ sql>select * from emp
 - to_date(date,format)  
 用于将字符串转化成date类型的数据。format的格式说明参看`to_char`函数
 
-###系统函数
+### 10.5 系统函数
 - sys_context('userenv',arg)
 
->'userenv' - 固定值
-  arg - 想要查询的环境属性参数    
- arg参数选项：  
- terminal: 当前会话客户所对应的终端的标识符  
- lanuage: 语言  
- db_name: 当前数据库名称  
- nls_date_format: 当前会话客户所对应的日期格式
- session_user: 当前会话客户所对应的数据库用户名
- current_schema: 当前会话客户所对应的默认方案名  
->host: 返回数据库所在主机的名称
+<pre>
+    'userenv' - 固定值
+    arg - 想要查询的环境属性参数    
+    arg参数选项：  
+    terminal: 当前会话客户所对应的终端的标识符  
+    lanuage: 语言  
+    db_name: 当前数据库名称  
+    nls_date_format: 当前会话客户所对应的日期格式
+    session_user: 当前会话客户所对应的数据库用户名
+    current_schema: 当前会话客户所对应的默认方案名  
+    host: 返回数据库所在主机的名称
+</pre>
 例如：
 <pre class="brush:sql">
 sql>select sys_context('userenv','db_name')
     from dual;
 </pre>
 
-###一般函数
-- nvl：空值转换
+###分支函数
 - decode：分支选择
 
 ###组函数
@@ -994,46 +1260,6 @@ sql>select sys_context('userenv','db_name')
     2. 对所有的非空值的处理，返回值不为null  
 >   3. 处理的值都为null，count返回0，其他的返回null  
 
-##CASE WHEN 语句
-<pre class="brush:sql">
-select case when base_duration = 20 
-            then unit_cost + 0.05
-            when base_duration = 40
-            then unit_cost + 0.03
-       else
-            unit_cost
-       end new_unit_cost,
-       base_duration,
-       unit_cost
-from cost;
-</pre>
-
-##DECODE -- 简版的CASE WHEN
-<pre class="brush:sql">
-select decode(base_duration,20,unit_cost+0.05,
-                            40,unit_cost+0.03,
-                            unit_cost) new_unit_cost,
-       base_duration,
-       unit_cost
-from cost;
-</pre>
-##exists
-<pre class="brush:sql">
-  sql>select a.real_name 
-      from account a 
-      where exists
-        (select 1 from service
-         where a.id = account_id);
-</pre>
-  说明：比`in`的效率高
-##not exists
-<pre class="brush:sql">
-  sql>select a.real_name 
-      from account a 
-      where not exists
-        (select 1 from service
-         where a.id = account_id);
-</pre>
 
 ## 11. SQL顺序
 ### 11.1 SQL语法顺序
