@@ -371,14 +371,21 @@ sql>update student set sex='女' where sal is null;
 #### 7.5.5 删除表数据
 #####delete
 说明：删除所有记录，表结构还在，写日志，可以恢复的，速度慢
+1. 表占用的空间不释放
+2. 保存旧数据到回滚段，时间长
+3. 数据可恢复
 <pre class="brush:sql">
 sql>delete from student
 </pre>
 #####truncate
-  说明：删除表中的所有记录，表结构还在，不写日志，无法找回删除的记录，比delete的速度快
+说明：删除表中的所有记录，表结构还在，不写日志，无法找回删除的记录，比delete的速度快
+1. 释放表占用的空间
+2. 不保存旧数据，时间短
+3. 数据不可恢复
 <pre class="brush:sql">
 sql>truncate table student;
 </pre>
+
 ### 7.6 重命名表
 <pre class="brush:sql">
 sql>rename test to test2
@@ -561,6 +568,24 @@ sql>drop table parent;
 #### 7.9 给表起别名
 <pre class="brush:sql">
 sql>create synonym account from tarena.account;
+</pre>
+
+#### 7.10 default
+说明：
+- 缺省值的数据类型必须匹配列的数据类型
+- 有效的缺省值为文字值、表达式、sql函数：sysdate、user等
+- 无效的缺省值为另一个列的列名或伪列
+- default可以用于inser语句、update语句
+例子：
+<pre class="brush:sql">
+sql>create table test(
+    c1 number default 1,
+    c2 number
+    )
+sql>insert into test (c2) values (2);
+sql>insert into test values (default,3);
+sql>update test set c1 = default
+    where c1 = 4;
 </pre>
 
 ## 8. acle表基本查询
@@ -1350,7 +1375,141 @@ from where group by having select order by
 ####`rollback`取消全部事务
 
 ## 13. 数据库对象操作
-###待补充 ...
+### 13.1 view
+#### 13.1.1 什么是view
+- 视图在数据库中不存储数据值，即不占空间
+- 只在系统表中存储对视图的定义
+- 视图实际就是select语句
+- 类似windws中的快捷方式
+
+#### 13.1.2 视图的应用
+- 简化操作，屏蔽了复杂的sql语句，直接对视图操作
+- 控制权限，只允许查询一张表中的部分数据。解决办法：对其创建视图，授予用户读视图的权限，而非读表的权限。
+- 通过视图将多张表union all成一张逻辑表，作为单独一个数据库对象，实现表的超集
+
+#### 13.1.3 视图的分类
+- 简单视图  
+基于单张表并且不包含函数或表达式的视图，在该视图上可以执行DML语句(即可执行增、删、改操作)
+<li>复杂视图</li>  
+包含函数、表达式或者分组数据的视图，在该视图上执行DML语句时必须要符合特定条件。  
+在定义复杂视图时必须为函数或表达式定义别名。
+- 连接视图  
+基于多个表建立的视图，一般来说不会在该视图上执行insert、update、delet操作。
+
+#### 13.1.4 视图的维护
+<pre class="brush:sql">
+--创建视图
+sql>create or replace view view_name;
+
+--删除视图
+sql>drop view view_name;
+
+--编译视图
+sql>alter view view_name compile;
+
+--查询 view_name 的状态，invalid/valid
+sql>select object_name,object_type,status 
+    from user_objects
+    where object_name='view_name';
+</pre>
+
+#### 13.1.5 视图中的with check option约束
+说明：  
+通过视图进行的修改，必须也能通过该视图看到修改后的结果，即在对视图进行`insert`、`update`时，会对修改进行检查，已保证修改后，通过视图可看到修改后的结果。相当于增加了一个约束，对视图的where条件进行检查，该约束的constraint_type为ｖ。
+用法：
+<pre class="brush:sql">
+sql>create or replace view view_name
+    as
+    select * from test
+    where c1 = 1 
+    with check option;
+</pre>
+
+#### 13.1.6 视图中的with read only约束
+说明：  
+声明本视图为只读视图，只是查看，不做更新，Oracle对只读视图不会加锁，视图的查询速度更快。只读视图的约束类型constraint_type为o。
+用法：
+<pre class="brush:sql">
+sql>create or replace view view_name
+    as
+    select * from test
+    where c1 = 1 
+    with read only;
+</pre>
+
+### 13.2 index
+#### 13.2.1 创建index
+用法：
+<pre class="brush:sql">
+sql>create index index_name
+    on table_name (colname);
+    -- 要求 colname 列的取值必须唯一。
+</pre>
+例子：
+<pre class="brush:sql">
+sql>create index service_account_id_idx
+    on service (account_id);
+</pre>
+
+#### 13.2.2 为什么要使用索引
+- Oracle server通过roid快速定位要找的行
+- 通过rowid定位数据能有效降低读取数据块的数量
+- 索引的使用和维护是自动的，一般情况不需要用户干预
+
+#### 13.2.3 哪些列适合建索引
+- 经常出现在where子句的列
+- 经常用于表连接的列
+- 该列是高基数数据列(高基数数据列是指有很多不同的值)
+- 该列包含许多`null`值
+- 表很大，查询的结果集小
+- 主键(pk)列、唯一键(uk)列
+- 外键(fk)列
+- 经常需要排序(order by)和分组(group by)的列
+- 索引不是万能的
+
+#### 13.2.3 索引的类型
+- 唯一性索引(unique)  
+  等价于唯一性约束
+- 非唯一性索引  
+  用于提高查询效率
+- 单列索引  
+  索引建在一列上
+- 联合索引  
+  索引建在多列上
+
+#### 13.2.4 哪些写法会导致索引用不了
+- 函数导致索引用不了  
+  `where upper(colname) = 'carmen'`
+- 表达式导致索引用不了  
+  `where colname*12 = 12000`
+- 部分隐式数据类型转换导致索引用不了  
+  `where c1 = 2`(c1为varchar2类型)
+- `like`和`substr`  
+  `where colname like 'CA%'`  
+  `where substr(colname,1,2) = 'CA'`
+- 查询所有的null值  
+  `where colname is null`
+- 否定形式  
+  `not in`  
+  `<>`
+
+### 13.3 序列号`sequence`
+#### 13.3.1 什么是`sequence`
+- Oracle提供的数据库对象
+- 为了解决主键值和唯一键值的唯一性
+- 按照预定义的模式自动生成整数的一种机制，保证数字的自动增长
+
+#### 13.3.2 创建`Sequence`
+<pre class="brush:sql">
+sql>create sequence seq_name
+    [increment by 1|integer]
+    [start with integer]
+    [maxvalue integer|nomaxvalue]
+    [minvalue integer|nominvalue]
+    [cycle|nocycle]
+    [cache 20|integer|no cache]
+    ;
+</pre>
 
 ## 14. Java操作Oracle
 ###14.1 桥接 JdbcOdbc
@@ -1397,9 +1556,14 @@ sql>update emp set （job,sal,comm）=
 ### 15.3 用查询结果创建新表
 <pre class="brush:sql">
 sql>create table mytable(empno,ename,sal,job,deptno)
-    as select empno,ename,sal,job,deptno from emp;
+    as select empno,ename,sal,job,deptno from emp where 1 = 1;
 </pre>
-说明：创建表结构并将被查询表中的数据导入到新建的表中
+说明：
+- 创建表结构并将被查询表中的数据导入到新建的表中
+- `where 1 = 1` 恒等式，表示将`emp`表中的所有数据都插入到`mytable`中
+- `where 1 = 2`恒不等式，表示不将`emp`表中的数据插入到`mytable`中
+- 表结构由子查询的selet语句决定，create table指定的列的数量要跟select语句指定的列的数量一致
+- create table定义列只能定义列名、缺省值、完整性约束。非空约束不需要定义可以直接复制过来。
 
 ### 15.4 使用dual表进行函数测
 <pre class="brush:sql">
@@ -1427,5 +1591,4 @@ sql>select table_name
 from user_tables
 where table_name like '%7'; 
 </pre>
-
 
