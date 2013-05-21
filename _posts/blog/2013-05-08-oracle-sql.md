@@ -558,14 +558,14 @@ sql>drop table parent;
 #### 7.8.8 约束部分小结
 
 - 定义约束时用户给他命名，若用户未命名，系统自动命名(形式为SYS_Cn格式)
-- 何时创建约束  
-    - create table时定义约束
+<li>何时创建约束</li>
+    - create table时定义约束  
     - 表已经存在，用alter table追加约束
-- 一个列上可以有多个约束
-- 一个约束定义在多个列上--联合主键
-- 定义约束有表级和列级两种形式
+<li>一个列上可以有多个约束</li>
+<li>一个约束定义在多个列上--联合主键</li>
+<li>定义约束有表级和列级两种形式</li>
  
-#### 7.9 给表起别名
+#### 7.9 给表起<del>别名</del>同义词
 <pre class="brush:sql">
 sql>create synonym account from tarena.account;
 </pre>
