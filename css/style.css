@@ -165,7 +165,7 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 .lost blockquote p { margin-bottom: 0.4em; }
 .lost blockquote p:before {
     content: "“";
-    font-size: 38px;
+    2ont-size: 38px;
     line-height: 18px;
     position: relative;
     color: #c8c8c8;
@@ -228,7 +228,7 @@ h1, h2, h3, h4, h5, h6{ font-weight: 500; font-weight: 700\9; color:#333; }
 .pagination .page { margin: 0  .65em 0 .65em; display: inline; padding-top: 20px; }
 .pagination .currentitem a { font-size:1.5em; color:#000000; }
 .pagination .pageitem a { font-size:1.25em; color:#000000;}
-.lost-footer .alignleft, .lost-logo .alignleft {display:inline;float:left;margin-right:24px;margin-top:4px;}
+.lost-footer .alignleft, .lost-logo .alignleft {display:inline;float:left;margin-right:24px;margin-top:4px;margin-bottom:2px;}
 .lost-footer .alignright {display:table;float:right;margin:4px 0px 2px 24px;}
 .lost-logo .alignright {font-family:"Microsoft YaHei","Hiragino Sans GB","Electrolize",sans-serif;font-size:16px;text-transform:uppercase;}
 .lost-logo .alignright {display:table;float:right;margin:32px 1px 2px 1px;}
@@ -242,7 +242,7 @@ pre code, .highlight code{margin: 0; padding: 0; background-color: transparent; 
  * lost layout
 *************************/
 .lost { width: 850px; padding: 1em 0 0em 0; margin: 0 auto; }
-.index { padding: 1em 0 0 0;}
+.index { padding: 0.5em 0 0 0;}
 .index h4 { border-bottom: none; }
 .lost-logo {
 	border-bottom: 1px solid #d0d0d0;
@@ -253,7 +253,7 @@ pre code, .highlight code{margin: 0; padding: 0; background-color: transparent; 
 }
 .lost-date { color: #292421; }
 .lost-double {
-	margin-bottom: 3em;
+	margin-bottom: 0.5em;
 }
 
 .lost-double .article {
@@ -402,7 +402,7 @@ pre code, .highlight code{margin: 0; padding: 0; background-color: transparent; 
 }
 
 .violet-logo { float: left; position: relative; width: 66px; height: 66px; margin: 20px 0 12px 0px; -moz-border-radius: 33px 33px; -webkit-border-radius: 33px 33px; -o-border-radius: 33px 33px; border-radius: 33px 33px; }
-.violet-site { float: left; margin: 20px 0 12px 1px; position: relative; width: 185px; color: #525252;
+.violet-site { float: left; margin: 20px 0 12px 1px; position: relative; width: 172px; color: #525252;
  }
 .violet-site h1, .violet-site h1 a { font-size: 32px; font-weight: normal; color: #525252; margin-bottom: 0;}
 .violet-site h1 a:hover { color: #323232; text-decoration: none; }
