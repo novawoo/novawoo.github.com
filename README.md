@@ -20,6 +20,8 @@ Jekyll生成的静态网页所以不能使用类似于Wordpress的插件提供�
 
 * **分享**：[Jiathis](http://www.jiathis.com/) 国内比较成熟的分享工具。
 
+* **网站分析**[Google Analytics](http://www.google.com/analytics/) Google的网站统计分析工具，值得信赖。
+
 基于本主题搭建博客：
 ===
 
