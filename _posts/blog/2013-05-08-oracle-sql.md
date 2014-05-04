@@ -1134,6 +1134,7 @@ sql>select
 >char1 -- 原字符串  
  search_string -- 要被替换的字符串  
 >replace_string -- 替换为的字符串
+
 - instr(char1,char2,[,n[,m]]):取子串在字符串的位置
 - lpad(str,padded_length,[pad_string]):左填充  
 >str -- 需要填充的字符串  
