@@ -7,5 +7,4 @@ tags:
  - 读书笔记
 ---
 
-## 《如何阅读一本书》的读书笔记
 ![读书笔记导图](/images/2014-05-09-how-to-read-a-book/how-to-read-a-book.jpeg)
