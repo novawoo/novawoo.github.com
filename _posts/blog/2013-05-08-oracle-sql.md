@@ -588,7 +588,7 @@ sql>update test set c1 = default
     where c1 = 4;
 </pre>
 
-## 8. acle表基本查询
+## 8. oracle表基本查询
 ### 8.1 sql语句的处理过程
 ![sql语句的处理过](/images/sql-in-oracle/01-oracle-process.jpg)
 
