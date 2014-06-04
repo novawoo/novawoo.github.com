@@ -937,7 +937,6 @@ sql>select column1,column2,...
 
 #### 9.3.1 交叉连接（cross join）
 笛卡尔积形式  
-规定：多表查询的条件是 至少不能少于表的个数减一
 用法：
 <pre class="brush:sql">
 sql>select tabname1.colname1, tablname2.colname2
@@ -951,6 +950,7 @@ sql>select * from account a cross join service s;
   
 #### 9.3.2 内连接（inner join）
 核心：匹配  
+规定：多表查询的条件是 至少不能少于表的个数减一
 用法：
 <pre class="brush:sql">
 sql>select tabname1.colname1,
@@ -972,7 +972,7 @@ sql>select tabname1.colname1,
 内连结果集为所有参与内连表的列的和
 
 #####执行顺序
-先根据ON和AND条件对要连接的表进行过滤，将过滤后的结果集进行内连接操作，再根据select语句的定义生成最终结果集。
+先根据AND条件对要连接的表进行过滤，将过滤后的结果集进行内连接操作，再根据select语句的定义生成最终结果集。
 
 #####经典案例：
 <pre class="brush:sql">
@@ -1063,7 +1063,10 @@ sql>select t1.real_name client,
   解决匹配问题
 ######外连接（outer join）
   解决不匹配问题  
-  表的所有记录出现在结果集
+  驱动表（主表）的所有记录出现在结果集
+####各类连接的区别
+- `cross join`与`inner join`、`out join`的区别：`cross join`不需要关键字`on`和连接条件，但`inner join`、`out join`需要
+- `inner join`与`out join`的区别：`out join`有驱动表(主表)，而`inner join`没有
 
 ### 9.4 合并查询
 说明：有时在实际应用中，为了合并多个select语句的结果，可以使用集合操作符号 union，union all，intersect，minus，使用这个语法进行查询的效率比在查询语句的where子句中使用and、or的效率要高，在大数据量查找时会用到。  
