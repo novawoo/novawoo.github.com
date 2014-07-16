@@ -1,11 +1,8 @@
 ﻿---
 layout:     post
 title:      如何编写方案书
-category:   
+category:   blog
 description:   写方案书的一些心得
-tags:
- - 心得
- - 方案书
 ---
 
 ## 五步法
