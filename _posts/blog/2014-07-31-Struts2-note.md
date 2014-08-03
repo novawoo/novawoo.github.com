@@ -8,6 +8,7 @@ tags:
 ---
 
 ## 1. Struts2工作原理
+
 ![Struts2详细流程图](/images/2014-07-31-Struts2-note/Struts2-flow.png)
 
 1. 客户发送一个请求，请求经过其他的Filter组件 --> StrutsFilter控制器。
@@ -19,6 +20,7 @@ tags:
 7. 将响应信息给客户浏览器输出
 
 ## 2. ValueStack原理
+
 ![Value Stack 原理](/images/2014-07-31-Struts2-note/Value-Stack.jpg)
 
 当客户发送请求后，Struts控制器会创建一个ValueStack对象，用于存储当前请求相关的数据对象。例如action,request,session等。内部结构主要由以下3部分构成：
