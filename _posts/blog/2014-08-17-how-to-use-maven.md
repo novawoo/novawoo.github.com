@@ -40,7 +40,7 @@ Maven是一个Java工具，所以在安装Maven之前，要确保已经安装了
 - 项目相关性部分包括关于项目相关性的信息。
 - 项目构建和报告部分包含项目构建信息（如源代码目录、单元测试用例目录）和要在构建中生成的报告。  
 
-![pom说明](/images/2014-08-17-how-to-use-maven/maven-pom.png)
+![pom说明](/images/2014-08-17-how-to-use-maven/maven-pom.PNG)
 
 ### 4.2 坐标
 
