@@ -130,7 +130,47 @@ Maven有三套相互独立的生命周期，而且“相互独立”，这三套
 - Default Lifecycle 构建的核心部分，编译，测试，打包，部署等等。
 - Site Lifecycle 生成项目报告，站点，发布站点。
 
-每个生命周期包含一些阶段（phase），这些阶段是有顺序的，并且后面的阶段依赖于前面的阶段，用户和Maven最直接的交互方式就是这些生命周期阶段（eg：mvn clean install）。
+![lifecycle-clean](/images/2014-08-17-how-to-use-maven/maven-lifecycle.gif)
+
+而每套生命周期都是一组**阶段(Phase)**组成，各套Lifecycle 的Phase如下：
+
+- Clean Lifecycle
+  1. pre-clean  执行一些需要在clean之前完成的工作；
+  2. clean  移除所有上一次构建生成的文件；
+  3. post-clean  执行一些需要在clean之后立刻完成的工作；
+
+- Site Lifecycle
+  1. pre-site  执行一些需要在生成站点文档之前完成的工作；
+  2. site  生成项目的站点文档；
+  3. post-site  执行一些需要在生成站点文档之后完成的工作，并且为部署做准备；
+  4. site-deploy  将生成的站点文档部署到特定的服务器上；
+
+- Default Lifecycle
+  1. validate
+  2. initialize
+  3. generate-sources
+  4. process-sources
+  5. generate-resources
+  6. process-resources  复制并处理资源文件，至目标目录，准备打包；
+  7. compile  编译项目的源代码；
+  8. process-classes
+  9. generate-test-sources 
+  10. process-test-sources 
+  11. generate-test-resources
+  12. process-test-resources  复制并处理资源文件，至目标测试目录；
+  13. test-compile  编译测试源代码；
+  14. process-test-classes
+  15. test  使用合适的单元测试框架运行测试。这些测试代码不会被打包或部署；
+  16. prepare-package
+  17. package  接受编译好的代码，打包成可发布的格式，如 JAR ；
+  18. pre-integration-test
+  19. integration-test
+  20. post-integration-test
+  21. verify
+  22. install  将包安装至本地仓库，以让其它项目依赖；
+  23. deploy  将最终的包复制到远程的仓库，以让其它开发人员与项目共享；
+
+这些阶段(Phase)是有顺序的，并且后面的阶段依赖于前面的阶段，用户和Maven最直接的交互方式就是这些生命周期阶段（eg：mvn clean install）。
 
 ![lifecyle](/images/2014-08-17-how-to-use-maven/maven-lifecyle.gif)
 
