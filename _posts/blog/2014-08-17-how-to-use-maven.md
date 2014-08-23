@@ -9,7 +9,7 @@ tags:
 ## 1. 简介
 Maven是基于项目对象模型(POM)，可以通过一小段描述信息来管理项目的构建，报告和文档的软件项目管理工具。
 Maven 除了以程序构建能力为特色之外，还提供高级项目管理工具。由于 Maven 的缺省构建规则有较高的可重用性，所以常常用两三行 Maven 构建脚本就可以构建简单的项目。由于 Maven 的面向项目的方法，许多 Apache Jakarta 项目现在使用 Maven，而且公司项目采用 Maven 的比例在持续增长。
-![principle](/images/2014-08-17-how-to-use-maven/maven-dependencies.jpg)
+![principle](../../images/2014-08-17-how-to-use-maven/maven-dependencies.jpg)
 
 ## 2. 安装
 Maven是一个Java工具，所以在安装Maven之前，要确保已经安装了JDK。
@@ -49,12 +49,12 @@ Maven是一个Java工具，所以在安装Maven之前，要确保已经安装了
 
 下面借助一个例子来介绍坐标中的各个元素：
 
-```
-<groupId>com.mycompany.app</groupId>  
-<artifactId>app_moduleName</artifactId>  
-<packaging>jar</packaging>  
-<version>0.0.1-SNAPSHOT</version>  
-```
+    
+    <groupId>com.mycompany.app</groupId>  
+    <artifactId>app_moduleName</artifactId>  
+    <packaging>jar</packaging>  
+    <version>0.0.1-SNAPSHOT</version>  
+    
 - groupId ：定义当前Maven项目隶属的实际项目
 - artifactId : 定义当前实际项目中的一个Maven项目（模块）
 - version : 该元素定义Maven项目当前的版本
@@ -102,13 +102,13 @@ Maven仓库是用来帮助我们存储和管理公共构件（主要是jar包）
 #### 4.4.1 本地仓库
 Maven安装完成后，会在本地创建一个`repository`目录，这个目录即为本地仓库。本地仓库的默认路径为：${user.home}/.m2/repository/，也可以自定义本地仓库的位置，修改${user.home}/.m2/settings.xml ：
 
-```
-<settings>
-  ...
-  <localRepository>E:\java\repository</localRepository>
-  ...
-</settings>
-```
+    
+    <settings>
+      ...
+      <localRepository>E:\java\repository</localRepository>
+      ...
+    </settings>
+    
 
 - 在执行`mvn install`命令时，Maven会将项目生成的构建安装到**本地仓库**，供**本地**其他构建使用。
 - 在执行`mvn deploy`命令时，Maven会将项目生成的构建发布到**远程仓库**，供**所有能访问该仓库的用户**使用。
@@ -190,24 +190,23 @@ Maven提倡使用一个共同的标准目录结构，使开发人员能在熟悉
 
 #### 4.7.3 Maven标准的目录结构
 Maven标准工程的根目录下就只有src和target两个目录，各文件及目录的定义如下：
-<pre>
-src 存放项目的源文件
-  -main
-      –bin 脚本库
-      –java java源代码文件
-      –resources 资源库，会自动复制到classes目录里
-      –filters 资源过滤文件
-      –assembly 组件的描述配置（如何打包）
-      –config 配置文件
-      –webapp web应用的目录。WEB-INF、css、js等
-  -test
-      –java 单元测试java源代码文件
-      –resources 测试需要用的资源库
-      –filters 测试资源过滤库
-  -site Site（一些文档）
-target 存放项目构建后的文件和目录，jar包、war包、编译的class文件等
-LICENSE.txt 工程的license文件
-README.txt 工程的readme文件
-</pre>
-
+    
+    src `存放项目的源文件`
+      -main
+          –bin `脚本库`
+          –java `java源代码文件`
+          –resources `资源库，会自动复制到classes目录里`
+          –filters `资源过滤文件`
+          –assembly `组件的描述配置（如何打包）`
+          –config `配置文件`
+          –webapp `web应用的目录,WEB-INF、css、js等`
+      -test
+          –java `单元测试java源代码文件`
+          –resources `测试需要用的资源库`
+          –filters `测试资源过滤库`
+      -site `Site（一些文档）`
+    target `存放项目构建后的文件和目录，jar包、war包、编译的class文件等`
+    LICENSE.txt `工程的license文件`
+    README.txt `工程的readme文件`
+    
 
