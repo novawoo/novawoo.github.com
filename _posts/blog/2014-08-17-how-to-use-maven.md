@@ -21,7 +21,7 @@ Maven是一个Java工具，所以在安装Maven之前，要确保已经安装了
    在`Path`环境变量中增加，`%M2_HOME%\bin`的配置 
 4. 测试是否安装成功  
    在命令行下，输入`mvn --version`，出现下图即为成功
-   ![sucess](/images/2014-08-17-how-to-use-maven/maven-install-sucess.png)
+   ![sucess](../../images/2014-08-17-how-to-use-maven/maven-install-sucess.png)
 5. 复制setting.xml到用户目录下，方便自定义设置，方法：将`${M2_HOME}/conf/settings.xml` 复制到 `${user.home}/.m2/settings.xml`
 
 ## 3. 要认识的目录
@@ -40,7 +40,7 @@ Maven是一个Java工具，所以在安装Maven之前，要确保已经安装了
 - 项目相关性部分包括关于项目相关性的信息。
 - 项目构建和报告部分包含项目构建信息（如源代码目录、单元测试用例目录）和要在构建中生成的报告。  
 
-![pom说明](/images/2014-08-17-how-to-use-maven/maven-pom.PNG)
+![pom说明](../../images/2014-08-17-how-to-use-maven/maven-pom.PNG)
 
 ### 4.2 坐标
 
@@ -67,7 +67,7 @@ Maven是一个Java工具，所以在安装Maven之前，要确保已经安装了
 - artifactId的值一般为：projectName_moduleName
 - version的值一般为：<主版本>.<次版本>.<增量版本>-<限定符>，其中主版本主要表示大型架构变更，次版本主要表示特性的增加，增量版本主要服务于bug修复，而限定符如snapshot、alpha、beta等等是用来表示里程碑。
 
-![版本控制](/images/2014-08-17-how-to-use-maven/maven-scm.jpg)
+![版本控制](../../images/2014-08-17-how-to-use-maven/maven-scm.jpg)
 
 ### 4.3 依赖
 依赖顾名思义，就是这个项目对其他构建或工程的依赖，配置了依赖就相当于将相应的jar包放到了lib目录下（当然这是狭义的理解）。
@@ -118,7 +118,7 @@ Maven安装完成后，会在本地创建一个`repository`目录，这个目录
 
 #### 4.4.3 特殊的远程仓库--Maven私服
 通过建立私服，可以降低中央仓库负荷、节省外网带宽、加速Maven构建、自己部署构件等，从而高效地使用Maven。
-![私服的作用](/images/2014-08-17-how-to-use-maven/maven-nexus.png)
+![私服的作用](../../images/2014-08-17-how-to-use-maven/maven-nexus.png)
 
 
 ### 4.5 生命周期和插件
@@ -130,22 +130,25 @@ Maven有三套相互独立的生命周期，而且“相互独立”，这三套
 - Default Lifecycle 构建的核心部分，编译，测试，打包，部署等等。
 - Site Lifecycle 生成项目报告，站点，发布站点。
 
-![lifecycle-clean](/images/2014-08-17-how-to-use-maven/maven-lifecycle.gif)
+![lifecycle-clean](../../images/2014-08-17-how-to-use-maven/maven-lifecycle.gif)
 
 而每套生命周期都是一组**阶段(Phase)**组成，各套Lifecycle 的Phase如下：
 
 - Clean Lifecycle
+>  
   1. pre-clean  执行一些需要在clean之前完成的工作；
   2. clean  移除所有上一次构建生成的文件；
   3. post-clean  执行一些需要在clean之后立刻完成的工作；
 
 - Site Lifecycle
+>  
   1. pre-site  执行一些需要在生成站点文档之前完成的工作；
   2. site  生成项目的站点文档；
   3. post-site  执行一些需要在生成站点文档之后完成的工作，并且为部署做准备；
   4. site-deploy  将生成的站点文档部署到特定的服务器上；
 
 - Default Lifecycle
+  >   
   1. validate
   2. initialize
   3. generate-sources
@@ -172,7 +175,7 @@ Maven有三套相互独立的生命周期，而且“相互独立”，这三套
 
 这些阶段(Phase)是有顺序的，并且后面的阶段依赖于前面的阶段，用户和Maven最直接的交互方式就是这些生命周期阶段（eg：mvn clean install）。
 
-![lifecyle](/images/2014-08-17-how-to-use-maven/maven-lifecyle.gif)
+![lifecyle](../../images/2014-08-17-how-to-use-maven/maven-lifecyle.gif)
 
 ### 4.6 聚合与继承
 简单的解释：
