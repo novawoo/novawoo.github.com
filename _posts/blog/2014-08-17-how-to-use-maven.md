@@ -191,25 +191,26 @@ Maven有三套相互独立的生命周期，而且“相互独立”，这三套
 #### 4.7.2 好处
 Maven提倡使用一个共同的标准目录结构，使开发人员能在熟悉了一个Maven工程后，对其他的Maven工程也能清晰了解。这样做也省去了很多设置的麻烦。
 
-#### 4.7.3 Maven标准的目录结构
+#### 4.7.3 约定的目录结构
 Maven标准工程的根目录下就只有src和target两个目录，各文件及目录的定义如下：
-    
-    src `存放项目的源文件`
-      -main
-          –bin `脚本库`
-          –java `java源代码文件`
-          –resources `资源库，会自动复制到classes目录里`
-          –filters `资源过滤文件`
-          –assembly `组件的描述配置（如何打包）`
-          –config `配置文件`
-          –webapp `web应用的目录,WEB-INF、css、js等`
-      -test
-          –java `单元测试java源代码文件`
-          –resources `测试需要用的资源库`
-          –filters `测试资源过滤库`
-      -site `Site（一些文档）`
-    target `存放项目构建后的文件和目录，jar包、war包、编译的class文件等`
-    LICENSE.txt `工程的license文件`
-    README.txt `工程的readme文件`
-    
+
+<pre class="brush:plain text">
+    src              ` 存放项目的源文件                            `
+      -main          ` 存放主代码                               `
+          –bin       ` 脚本库                                 `
+          –java      ` java源代码文件                           `
+          –resources ` 资源库，会自动复制到classes目录里                `
+          –filters   ` 资源过滤文件                              `
+          –assembly  ` 组件的描述配置（如何打包）                       `
+          –config    ` 配置文件                                `
+          –webapp    ` web应用的目录,WEB-INF、css、js等            `
+      -test          ` 存放测试代码                              `
+          –java      ` 单元测试java源代码文件                       `
+          –resources ` 测试需要用的资源库                           `
+          –filters   ` 测试资源过滤库                             `
+      -site          ` Site（一些文档）                          `
+    target           ` 存放项目构建后的文件和目录，jar包、war包、编译的class文件等 `
+    LICENSE.txt      ` 工程的license文件                        `
+    README.txt       ` 工程的readme文件                         `
+</pre>
 
