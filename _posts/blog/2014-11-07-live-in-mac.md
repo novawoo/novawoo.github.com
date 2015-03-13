@@ -7,7 +7,7 @@ description:    记录如何在mac中工作、学习
 
 ## utils 
 1. chrome
-2. input(QQ input)
+2. input(推荐：sogou input)
 3. Alfred2
 4. brew
 5. git & connected to github
