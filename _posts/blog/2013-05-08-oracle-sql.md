@@ -946,7 +946,14 @@ sql>select tabname1.colname1, tablname2.colname2
 <pre class="brush:sql">
 sql>select * from account a cross join service s;
 </pre>
-此查询的结果集为account和service表中所有记录的组合
+此查询的结果集的列数account和service表中的所有列，条数为account表总条数与service表总条数的乘积。
+
+**用逗号将两表隔开的写法与cross join的写法是等价的，例如下面两条SQL的作用是一样的：**
+<pre class="brush:sql">
+sql>select * from account a cross join service s;
+
+sql>select * from account a, service s;
+</pre>
   
 #### 9.3.2 内连接（inner join）
 核心：匹配  
