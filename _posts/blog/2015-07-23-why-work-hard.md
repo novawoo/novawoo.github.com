@@ -2,7 +2,7 @@
 layout:     post
 title:      我为什么要做好现在的工作
 category:   blog
-description:    描述我如何应对人生的迷茫
+description:    记录我如何应对人生的迷茫
 ---
 
 ## 我的迷茫
