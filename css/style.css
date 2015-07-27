@@ -226,7 +226,7 @@ h1, h2, h3, h4, h5, h6{ font-weight: 500; font-weight: 700\9; color:#333; }
 .main-index .main-excerpt .more a { color: #484848; }
 .pagination  { margin-left:10em; list-style: none outside none; }
 .pagination .page { margin: 0  .65em 0 .65em; display: inline; padding-top: 20px; }
-.pagination .currentitem a { font-size:1.5em; color:#000000; }
+.pagination .currentitem { font-size:1.5em; color:#000000; }
 .pagination .pageitem a { font-size:1.25em; color:#000000;}
 .lost-footer .alignleft, .lost-logo .alignleft {display:inline;float:left;margin-right:24px;margin-top:4px;margin-bottom:2px;}
 .lost-footer .alignright {display:table;float:right;margin:4px 0px 2px 24px;}
@@ -402,7 +402,7 @@ pre code, .highlight code{margin: 0; padding: 0; background-color: transparent; 
 }
 
 .violet-logo { float: left; position: relative; width: 66px; height: 66px; margin: 20px 0 12px 0px; -moz-border-radius: 33px 33px; -webkit-border-radius: 33px 33px; -o-border-radius: 33px 33px; border-radius: 33px 33px; }
-.violet-site { float: left; margin: 20px 0 12px 1px; position: relative; width: 172px; color: #525252;
+.violet-site { float: left; margin: 20px 0 12px 1px; position: relative; width: 160px; color: #525252;
  }
 .violet-site h1, .violet-site h1 a { font-size: 32px; font-weight: normal; color: #525252; margin-bottom: 0;}
 .violet-site h1 a:hover { color: #323232; text-decoration: none; }
