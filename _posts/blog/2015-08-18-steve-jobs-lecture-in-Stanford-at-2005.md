@@ -6,7 +6,7 @@ description:    从伟人哪里获得对人生的理解
 ---
 
 ## 为什么要摘录
-一次偶然的机会，看了乔布斯2005年在斯坦福大学毕业典礼上的讲话([视频地址](http://v.youku.com/v_show/id_XMjk4Mzk4Mjg0.html))，他讲了三个故事，非常有深意，我很受鼓舞，所以就花时间把讲话的内容摘录下了，虽然前后花了3个多小时，但这一定是值得的。
+一次偶然的机会，看了乔布斯2005年在斯坦福大学毕业典礼上的讲话([视频地址](http://v.youku.com/v_show/id_XMjk4Mzk4Mjg0.html))，他讲了三个故事，非常有深意，我很受鼓舞，所以就花时间把讲话的内容摘录下了，虽然前后花了4个多小时，但这一定是值得的。
 
 ## 讲话内容
 
@@ -77,7 +77,7 @@ description:    从伟人哪里获得对人生的理解
 - 当我休学之后，我再也不用上我没兴趣的必修课，把时间拿去听那些我有兴趣的课。
  
 - It wasn't all romantic. I didn't have a dorm room, so I slept on the floor in friends' rooms, I returned coke bottles for the 5 cent deposits to buy food with and I would walk the 7 miles across town every Sunday night to get one good meal a week at the Hare Krishna temple.
-- 这一点也不浪漫。我没有宿舍，所以我睡在朋友房间的地板上，靠着回收可乐空罐的五美分买吃的。每个星期天晚上得走七里的路，晚上得到一个好好吃一顿在Hare Krishna temple。
+- 这一点也不浪漫。我没有宿舍，所以我睡在朋友房间的地板上，靠着回收可乐空罐的五美分买吃的。每个星期天晚上得走七里的路，去得到一个好好吃一顿机会在Hare Krishna temple。
  
 - I loved it.
 - 我爱这个。
