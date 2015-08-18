@@ -89,8 +89,8 @@ description:    从伟人哪里获得对人生的理解
     - 我不能预先把点点滴滴串在一起。
 - Again, you can't connect the dots looking forward, you can only connect them looking backwards.
     - 十年后唯有未来回顾时，才会明白那些点点滴滴是如何串在一起的。
-- So you have to trust that the dots will somehow connect in your future.
-    - 所以你要相信，你现在所体会的东西，将在你的未来连接在一起。
+- **So you have to trust that the dots will somehow connect in your future.**
+    - **所以你要相信，你现在所体会的东西，将在你的未来连接在一起。**
 - You have to trust in something, your gut,desting,life karma,whatever, Beleiveing that the dots will connect down the road will give you the confidence to follown your heart.
     - 你得信任某个东西，直觉，命运，生命，因缘，然而，这种作法从来没让我失望。
 - Even when it leads you off the well worn path,and that will make all the difference.
@@ -186,7 +186,7 @@ description:    从伟人哪里获得对人生的理解
 - Pixar went on to vreate the world's first computer Animated feature file "Toy Story"
     - 皮克斯制作了世界上第一个用电脑制作的动画电影 玩具总动员
 - And is now the most successful animation studio in the world
-    - 现在时世界上最成功的动画工作室
+    - 现在是世界上最成功的动画工作室
 - In a remarkable turn of events Apple bought NeXT
     - 在后来的一系列运作中苹果收购了NeXT
 - I returned to Apple
@@ -209,14 +209,10 @@ description:    从伟人哪里获得对人生的理解
     - 有些时候 生活会给你当头棒喝
 - Don't lose faith
     - 不要失去信仰
-- I'm convinced that the only thing
-    - 我很清楚唯一使我一直走下去的
-- That kept me going was that I loved what I did 
-    - 就是做我无比钟爱的事情
-- You've got to find what you love 
-    - 你需要去找到你所爱的东西
-- And that is as true for your work as it for your lovers
-    - 这是一条适合工作和爱情的信条
+- **I'm convinced that the only thing that kept me going was that I loved what I did**
+    - **我很清楚唯一使我一直走下去的就是做我无比钟爱的事情**
+- **You've got to find what you love and that is as true for your work as it for your lovers**
+    - **你需要去找到你所爱的东西，这是一条适合工作和爱情的信条**
 - Your work is going to fill a large part of your life 
     - 你的工作将占据生活中很大的一部分
 - And the only way to be truly satisfied is to do
@@ -308,7 +304,7 @@ description:    从伟人哪里获得对人生的理解
 - Which is doctor's code for prepare to die
     - 这也是医生对所有临终病人的嘱咐
 - It means to try to tell your kids everything
-    - 这意味着要报未来十年你对你小孩说的话
+    - 这意味着要把未来十年你对你小孩说的话
 - You thought you'd have the next 10 years to tell them in just a few months
     - 在几个月里说完
 - It means to make sure everything is buttoned up
@@ -326,7 +322,7 @@ description:    从伟人哪里获得对人生的理解
 - Through my stomach and into my intestines 
     - 通过我的胃 然后进入肠道
 - Put a needle into my pancreas and got a few cells from the tumor
-    - 用一根针在我的肿瘤上去了几个细胞
+    - 用一根针在我的肿瘤上取了几个细胞
 - I was sedated but my wife who was there
     - 我当时是麻醉的 但是我的妻子在那里
 - Told me that when they viewed the cells ;under a microscope
@@ -426,7 +422,7 @@ description:    从伟人哪里获得对人生的理解
 - They put out a final issue
     - 他们做出了最后一期的目录
 - It was the mid-1970s and I was your age
-    - 那是七十年代的中期 那是我与你们的年龄相仿
+    - 那是七十年代的中期 那时我与你们的年龄相仿
 - One the back cover of their final issue was 
     - 杂志最后一期的封底上
 - A phtotgraph of an early morning country road
@@ -449,11 +445,25 @@ description:    从伟人哪里获得对人生的理解
     - 在你们即将毕业开始新的旅程的时候
 - I wish that for you
     - 我也希望你们能这样
-- Stay Hungry Stay Foolish
-    - 求知若饥 虚心若愚
+- **Stay Hungry Stay Foolish**
+    - **求知若饥 虚心若愚**
 - Thank you all very much
     - 非常感谢你们
 
+## 回味
+### 连接点
+- **So you have to trust that the dots will somehow connect in your future.**
+    - **所以你要相信，你现在所体会的东西，将在你的未来连接在一起。**
+
+### 爱与失去
+- **I'm convinced that the only thing that kept me going was that I loved what I did**
+    - **我很清楚唯一使我一直走下去的就是做我无比钟爱的事情**
+- **You've got to find what you love and that is as true for your work as it for your lovers**
+    - **你需要去找到你所爱的东西，这是一条适合工作和爱情的信条**
+
+### 死亡
+- **Stay Hungry Stay Foolish**
+    - **求知若饥 虚心若愚**
 
 ## 本文的修订历史
 - v1 2015-08-18 初始版本
