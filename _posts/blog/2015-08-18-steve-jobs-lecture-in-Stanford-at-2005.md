@@ -13,10 +13,8 @@ description:    从伟人哪里获得对人生的理解
 ### 开场白
 - Thank You. I am honored to be with you today at your commencement from one of the finest universities in the world.
 - 谢谢。今天很荣幸能和你们一起参加世界上最好大学的毕业典礼。
-
 - Truth be told I nerver graduated from college and this is the closest I've erver gotten to a college graduation.
 - 说实话，我没有从大学毕业，这是我离大学毕业最近的一刻。
- 
 - Today I want to tell you three stories from my life. That's it. No big deal. Just three stories.
 - 今天我要告诉你，我的生命中的三个故事。就是这样。没什么大不了的。短短三个故事。
 
@@ -101,13 +99,13 @@ description:    从伟人哪里获得对人生的理解
 - 书法的美好、历史感与艺术感是科学所无法捕获的。我觉得那很迷人。
  
 - None of this had even a hope of。
-- 我没预期过学的这些东西能在我生活中起些什么实际作用。
+- 我没预期学过的这些东西能在我生活中起些什么实际作用。
  
 - But ten years later, when we were designing the first Macintosh computer, it all came back to me. And we designed it all into the Mac.
 - 但十年后，当我们在设计第一台Macintosh电脑，我想起了当时所学的东西，所以把这些东西都设计进了Mac。
  
 - It was the first computer with beautiful typography.
-- 这是第一台能做出漂亮东西的计算机。
+- 这是第一台能做出漂亮字体的计算机。
  
 - If I had never dropped in on that single course in college, the Mac would have never had multiple typefaces or proportionally spaced fonts.
 - 如果我没沉溺于那样一门课里，Mac可能就不会有多重字体跟变间距字体了。
@@ -128,7 +126,7 @@ description:    从伟人哪里获得对人生的理解
 - 十年后唯有未来回顾时，才会明白那些点点滴滴是如何串在一起的。
  
 - So you have to trust that the dots will somehow connect in your future.
-- 所以你的相信，你现在所体会的东西，将来多少回连接在一起在你的未来。
+- 所以你要相信，你现在所体会的东西，将在你的未来连接在一起。
  
 - You have to trust in something, your gut,desting,life karma,whatever, Beleiveing that the dots will connect down the road will give you the confidence to follown your heart.
 - 你得信任某个东西，直觉，命运，生命，因缘，然而，这种作法从来没让我失望。
