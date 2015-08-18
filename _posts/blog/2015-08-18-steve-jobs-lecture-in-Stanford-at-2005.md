@@ -12,10 +12,10 @@ description:    从伟人哪里获得对人生的理解
 
 ### 开场白
 - Thank You. I am honored to be with you today at your commencement from one of the finest universities in the world.
-    - 谢谢。今天很荣幸能和你们一起参加世界上最好大学的毕业典礼。
+- 谢谢。今天很荣幸能和你们一起参加世界上最好大学的毕业典礼。
 
 - Truth be told I nerver graduated from college and this is the closest I've erver gotten to a college graduation.
-    - 说实话，我没有从大学毕业，这是我离大学毕业最近的一刻。
+- 说实话，我没有从大学毕业，这是我离大学毕业最近的一刻。
  
 - Today I want to tell you three stories from my life. That's it. No big deal. Just three stories.
 - 今天我要告诉你，我的生命中的三个故事。就是这样。没什么大不了的。短短三个故事。
@@ -28,126 +28,120 @@ description:    从伟人哪里获得对人生的理解
 - I dropped out of Reed College after the first 6 mounths, but then stayed around as a drop-in for another 18 months or so before I really quit.
 - 我在里德(Reed college)待了六个月就办休学了。随后徘徊在那里，直到18个月后才真正退学。
  
- 
 - So why did I drop out?
 - 我为什么退学呢？
- 
  
 - It started before I was born.
 - 是这样的在我出生之前。
  
- 
 - My biological mother was a young, unwed graduate student, and she decided to put me up for adoption.
 - 我的亲生母亲是一个年轻的、未婚的学生，她决定让别人收养我。
  
+- She felt very strongly that I should be adopted by college fraduates, so everything was all set for me to be adopted at birth by a lawyer and his wife.
+- 这个必须是个大学毕业生，所以我出生时她就准备让我被一对律师夫妇收养。
  
-She felt very strongly that I should be adopted by college fraduates, so everything was all set for me to be adopted at birth by a lawyer and his wife.
+- Except that when I popped out they decided at the last minute that they really wanted a girl.
+- 但是这对夫妻到了最后一刻反悔了,他们想收养女孩。
+ 
+- So my parents, who were on a waiting list, got a call in the middle of the night asking:"We have an unexpected baby boy; do you want him?"
+- 所以在等待收养名单上的一对夫妻，我的养父母在一天半夜里养父母接到一通电话，还有一个，你们要认养他吗？
+ 
+- They said:"Of course." My biological mother later found out that my mother had never graduated from college and that my father had never graduated from high school.
+- 他们说：“当然”。我的生母后来发现，我的父母从来没有从大学毕业和我的父亲从来没有从高中毕业。
+ 
+- She refused to sign the final adoption papers.
+- 她拒绝签署最后的收养文件。
+ 
+- She only relented a few months later when my parents promised that I would go to college. This was the start in my life.
+- 几个月后，我的养父母承诺将来一定让我上大学。这是我生命中的开始。
+ 
+- And 17 years later I did go to college. But I naively chose a college that was almost as expensive as Stanford, and all of my working-class parents' savings were being spent on my college tuition.
+- 17年后，但是当时我无知选了一所学费几乎跟斯坦福一样贵的大学，我那工薪阶层的父母所有积蓄都花在我的学费上。
+ 
+- After six months, I couldn't see the value in it.
+- 六个月后，我看不出念这个书的价值何在。
+ 
+- I had no idea what I wanted to do with my life and no idea how college was going to help me figure it out.
+- 我不知道这辈子要干什么，也不知道念大学能对我有什么帮助。
+ 
+- And here I was spending all of the money my parents had saved their entire life.
+- 而且我为了念这个书，花光了我父母这辈子的所有积蓄。
+ 
+- So I decided to drop out and trust that it would all work out OK.
+- 所以我决定休学，相信船到桥头自然直。
+ 
+- It was pretty scary at the time, but looking back it was one of the best decisions I ever made.
+- 当时这个决定看来相当可怕，但回过头来看，这是我做过最好的决定之一。
+ 
+- The minute I dropped out I could stop taking the required classes that didn't interest me, and begin dropping in on the ones that looked interesting.
+- 当我休学之后，我再也不用上我没兴趣的必修课，把时间拿去听那些我有兴趣的课。
+ 
+- It wasn't all romantic. I didn't have a dorm room, so I slept on the floor in friends' rooms, I returned coke bottles for the 5 cent deposits to buy food with and I would walk the 7 miles across town every Sunday night to get one good meal a week at the Hare Krishna temple.
+- 这一点也不浪漫。我没有宿舍，所以我睡在朋友房间的地板上，靠着回收可乐空罐的五美分买吃的。每个星期天晚上得走七里的路，晚上得到一个好好吃一顿在Hare Krishna temple。
+ 
+- I loved it.
+- 我爱这个。
+ 
+- And much of what I stumbled into by following my curiosity and intuition turned out to be priceless later on.
+- 后来我无意中发现后，我所驻足的大部分事物，都成了无价之宝。
+ 
+- Let me give you one example: Reed College at that time offered perhaps the best calligraphy instruction int the country.
+- 举例来说：当时里德学院有着大概是全国最好的书法专业。
+ 
+- Throughout the campus every poster, every label on every drawer, was beautifully hand calligraphed.
+- 整个校园的每一个海报，每一个抽屉上的每一个标签都是美丽的手写字。
+ 
+- Because I had dropped out and didn't have to take the normal classes, I decided to take a calligraphy class to learn how to do this.
+- 因为我退学，不必正常上课，我决定学书法。
+ 
+- I learned about serif and san serif typefaces, about varying the amount of space between different letter combinations, about what makes great typography great.
+- 我学到了serif和san serif字体，学到在不同字母组合间变更字间距，学到活版印刷伟大的地方。
+ 
+- It was beautiful,historical,artistically subtle in a way that science can't capture, and I found it fascinating.
+- 书法的美好、历史感与艺术感是科学所无法捕获的。我觉得那很迷人。
+ 
+- None of this had even a hope of。
+- 我没预期过学的这些东西能在我生活中起些什么实际作用。
+ 
+- But ten years later, when we were designing the first Macintosh computer, it all came back to me. And we designed it all into the Mac.
+- 但十年后，当我们在设计第一台Macintosh电脑，我想起了当时所学的东西，所以把这些东西都设计进了Mac。
+ 
+- It was the first computer with beautiful typography.
+- 这是第一台能做出漂亮东西的计算机。
+ 
+- If I had never dropped in on that single course in college, the Mac would have never had multiple typefaces or proportionally spaced fonts.
+- 如果我没沉溺于那样一门课里，Mac可能就不会有多重字体跟变间距字体了。
+ 
+- And since Windows just copied the Mac, it's likely that no personal computer would have them.
+- 当年Windows抄袭了Mac，如果当年我没这样做，大概世界上所有的个人计算机都不会有这样的字体。
+ 
+- If I had never dropped out, I would have never dropped in on this calligraphy class, and personal computers might not have the wonderful typography that they do.
+- 如果我没有退学，不学艺术课，个人电脑可能不会有精彩的排版。
+ 
+- Of course it was impossible to connect the dots looking forward when I was in college.
+- 当然这一切都是未知的，在大学时。
+ 
+- But it was very, very clear looing backwards ten years later.
+- 我不能预先把点点滴滴串在一起。
+ 
+- Again, you can't connect the dots looking forward, you can only connect them looking backwards.
+- 十年后唯有未来回顾时，才会明白那些点点滴滴是如何串在一起的。
+ 
+- So you have to trust that the dots will somehow connect in your future.
+- 所以你的相信，你现在所体会的东西，将来多少回连接在一起在你的未来。
+ 
+- You have to trust in something, your gut,desting,life karma,whatever, Beleiveing that the dots will connect down the road will give you the confidence to follown your heart.
+- 你得信任某个东西，直觉，命运，生命，因缘，然而，这种作法从来没让我失望。
+ 
+- Even when it leads you off the well worn path,and that will make all the difference.
+- 也让我的人生整个不同起来。
+ 
+### 第二个故事：爱与失去
+- My second story is about love and loss.
+- 我的第二个故事，有关爱与失去。
 
-这个必须是个大学毕业生，所以我出生时她就准备让我被一对律师夫妇收养。
- 
- 
-Except that when I popped out they decided at the last minute that they really wanted a girl.
-但是这对夫妻到了最后一刻反悔了,他们想收养女孩。
- 
-So my parents, who were on a waiting list, got a call in the middle of the night asking:"We have an unexpected baby boy; do you want him?"
-所以在等待收养名单上的一对夫妻，我的养父母在一天半夜里养父母接到一通电话，还有一个，你们要认养他吗？
- 
-They said:"Of course." My biological mother later found out that my mother had never graduated from college and that my father had never graduated from high school.
-他们说：“当然”。我的生母后来发现，我的父母从来没有从大学毕业和我的父亲从来没有从高中毕业。
- 
-She refused to sign the final adoption papers.
-她拒绝签署最后的收养文件。
- 
-She only relented a few months later when my parents promised that I would go to college. This was the start in my life.
-几个月后，我的养父母承诺将来一定让我上大学。这是我生命中的开始。
- 
-And 17 years later I did go to college. But I naively chose a college that was almost as expensive as Stanford, and all of my working-class parents' savings were being spent on my college tuition.
-17年后，但是当时我无知选了一所学费几乎跟斯坦福一样贵的大学，我那工薪阶层的父母所有积蓄都花在我的学费上。
- 
-After six months, I couldn't see the value in it.
-六个月后，我看不出念这个书的价值何在。
- 
-I had no idea what I wanted to do with my life and no idea how college was going to help me figure it out.
-我不知道这辈子要干什么，也不知道念大学能对我有什么帮助。
- 
-And here I was spending all of the money my parents had saved
-their entire life.
-而且我为了念这个书，花光了我父母这辈子的所有积蓄。
- 
-So I decided to drop out and trust that it would all work out OK.
-所以我决定休学，相信船到桥头自然直。
- 
-It was pretty scary at the time, but looking back it was one of the best decisions I ever made.
-当时这个决定看来相当可怕，但回过头来看，这是我做过最好的决定之一。
- 
-The minute I dropped out I could stop taking the required classes that didn't interest me, and begin dropping in on the ones that looked interesting.
-当我休学之后，我再也不用上我没兴趣的必修课，把时间拿去听那些我有兴趣的课。
- 
-It wasn't all romantic. I didn't have a dorm room, so I slept on the floor in friends' rooms, I returned coke bottles for the 5 cent deposits to buy food with and I would walk the 7 miles across town every Sunday night to get one good meal a week at the Hare Krishna temple.
-这一点也不浪漫。我没有宿舍，所以我睡在朋友房间的地板上，靠着回收可乐空罐的五美分买吃的。每个星期天晚上得走七里的路，晚上得到一个好好吃一顿在Hare Krishna temple。
- 
-I loved it.
-我爱这个。
- 
-And much of what I stumbled into by following my curiosity and intuition turned out to be priceless later on.
-后来我无意中发现后，我所驻足的大部分事物，都成了无价之宝。
- 
-Let me give you one example: Reed College at that time offered perhaps the best calligraphy instruction int the country.
-举例来说：当时里德学院有着大概是全国最好的书法专业。
- 
-Throughout the campus every poster, every label on every drawer, was beautifully hand calligraphed.
-整个校园的每一个海报，每一个抽屉上的每一个标签都是美丽的手写字。
- 
-Because I had dropped out and didn't have to take the normal classes, I decided to take a calligraphy class to learn how to do this.
-因为我退学，不必正常上课，我决定学书法。
- 
-I learned about serif and san serif typefaces, about varying the amount of space between different letter combinations, about what makes great typography great.
-我学到了serif和san serif字体，学到在不同字母组合间变更字间距，学到活版印刷伟大的地方。
- 
-It was beautiful,historical,artistically subtle in a way that science can't capture, and I found it fascinating.
-书法的美好、历史感与艺术感是科学所无法捕获的。我觉得那很迷人。
- 
-None of this had even a hope of。
-我没预期过学的这些东西能在我生活中起些什么实际作用。
- 
-But ten years later, when we were designing the first Macintosh computer, it all came back to me. And we designed it all into the Mac.
-但十年后，当我们在设计第一台Macintosh电脑，我想起了当时所学的东西，所以把这些东西都设计进了Mac。
- 
-It was the first computer with beautiful typography.
-这是第一台能做出漂亮东西的计算机。
- 
-If I had never dropped in on that single course in college, the Mac would have never had multiple typefaces or proportionally spaced fonts.
-如果我没沉溺于那样一门课里，Mac可能就不会有多重字体跟变间距字体了。
- 
-And since Windows just copied the Mac, it's likely that no personal computer would have them.
-当年Windows抄袭了Mac，如果当年我没这样做，大概世界上所有的个人计算机都不会有这样的字体。
- 
-If I had never dropped out, I would have never dropped in on this calligraphy class, and personal computers might not have the wonderful typography that they do.
-如果我没有退学，不学艺术课，个人电脑可能不会有精彩的排版。
- 
-Of course it was impossible to connect the dots looking forward when I was in college.
-当然这一切都是未知的，在大学时。
- 
-But it was very, very clear looing backwards ten years later.
-我不能预先把点点滴滴串在一起。
- 
-Again, you can't connect the dots looking forward, you can only connect them looking backwards.
-十年后唯有未来回顾时，才会明白那些点点滴滴是如何串在一起的。
- 
-So you have to trust that the dots will somehow connect in your future.
-所以你的相信，你现在所体会的东西，将来多少回连接在一起在你的未来。
- 
-You have to trust in something, your gut,desting,life karma,whatever, Beleiveing that the dots will connect down the road will give you the confidence to follown your heart.
-你得信任某个东西，直觉，命运，生命，因缘，然而，这种作法从来没让我失望。
- 
-Even when it leads you off the well worn path,and that will make all the difference.
-也让我的人生整个不同起来。
- 
-My second story is about love and loss.
-我的第二个故事，有关爱与失去。
- 
-I Was lucky
-我很幸运
+- I Was lucky
+- 我很幸运
 
 I found what I loved to do early in life
 因为在很早的时候 我就找到了我所钟爱的动向
