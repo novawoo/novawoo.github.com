@@ -379,10 +379,10 @@ description:    从伟人哪里获得对人生的理解
     - 不要被其他人宣泄的观点掩饰住你内心
 - And most important
     - 还有最重要的是
-- Have the courage to follow your heart and intuition
-    - 你要有勇气去听从你直觉和心灵的呼唤
-- They somhow already know what you truly want to beacome
-    - 在某种程度上 他们知道你要成为什么样的人
+- **Have the courage to follow your heart and intuition**
+    - **你要有勇气去听从你直觉和心灵的呼唤**
+- **They somhow already know what you truly want to beacome**
+    - **在某种程度上 他们知道你要成为什么样的人**
 - Everything else is secondary
     - 其他的事情都是次要的
 - When I was young
@@ -462,6 +462,10 @@ description:    从伟人哪里获得对人生的理解
     - **你需要去找到你所爱的东西，这是一条适合工作和爱情的信条**
 
 ### 死亡
+- **Have the courage to follow your heart and intuition**
+    - **你要有勇气去听从你直觉和心灵的呼唤**
+- **They somhow already know what you truly want to beacome**
+    - **在某种程度上 他们知道你要成为什么样的人**
 - **Stay Hungry Stay Foolish**
     - **求知若饥 虚心若愚**
 
