@@ -12,17 +12,19 @@ description:    从伟人哪里获得对人生的理解
 
 ### 开场白
 - Thank You. I am honored to be with you today at your commencement from one of the finest universities in the world.
+
 谢谢。今天很荣幸能和你们一起参加世界上最好大学的毕业典礼。
  
  
-Truth be told I nerver graduated from college and this is the closest I've erver gotten to a college graduation.
+- Truth be told I nerver graduated from college and this is the closest I've erver gotten to a college graduation.
 
 说实话，我没有从大学毕业，这是我离大学毕业最近的一刻。
  
  
-Today I want to tell you three stories from my life. That's it. No big deal. Just three stories.
+- Today I want to tell you three stories from my life. That's it. No big deal. Just three stories.
 
 今天我要告诉你，我的生命中的三个故事。就是这样。没什么大不了的。短短三个故事。
+
  
 ### 第一个故事：连接点
 The first story is about connecting the dots.
