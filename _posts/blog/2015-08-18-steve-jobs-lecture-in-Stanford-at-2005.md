@@ -2,7 +2,7 @@
 layout:     post
 title:      乔布斯2005年在斯坦福大学毕业典礼上的讲话摘录
 category:   blog
-description:    从伟人哪里获得对人生的理解
+description:    从伟人那里获得对人生的理解
 ---
 
 ## 一、为什么要摘录
