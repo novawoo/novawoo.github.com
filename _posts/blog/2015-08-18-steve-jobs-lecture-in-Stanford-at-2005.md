@@ -11,7 +11,7 @@ description:    从伟人哪里获得对人生的理解
 ## 讲话内容
 
 ### 开场白
-    Thank You. I am honored to be with you today at your commencement from one of the finest universities in the world.
+`Thank You. I am honored to be with you today at your commencement from one of the finest universities in the world.`
 谢谢。今天很荣幸能和你们一起参加世界上最好大学的毕业典礼。
  
  
