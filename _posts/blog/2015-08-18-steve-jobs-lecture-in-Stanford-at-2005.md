@@ -12,11 +12,11 @@ description:    从伟人哪里获得对人生的理解
 
 ### 开场白
 - Thank You. I am honored to be with you today at your commencement from one of the finest universities in the world.
-- 谢谢。今天很荣幸能和你们一起参加世界上最好大学的毕业典礼。
+    - 谢谢。今天很荣幸能和你们一起参加世界上最好大学的毕业典礼。
 - Truth be told I nerver graduated from college and this is the closest I've erver gotten to a college graduation.
-- 说实话，我没有从大学毕业，这是我离大学毕业最近的一刻。
+    - 说实话，我没有从大学毕业，这是我离大学毕业最近的一刻。
 - Today I want to tell you three stories from my life. That's it. No big deal. Just three stories.
-- 今天我要告诉你，我的生命中的三个故事。就是这样。没什么大不了的。短短三个故事。
+    - 今天我要告诉你，我的生命中的三个故事。就是这样。没什么大不了的。短短三个故事。
 
  
 ### 第一个故事：连接点
@@ -138,11 +138,11 @@ description:    从伟人哪里获得对人生的理解
 - My second story is about love and loss.
 - 我的第二个故事，有关爱与失去。
 
-- I Was lucky
+- I was lucky
 - 我很幸运
 
 - I found what I loved to do early in life
-- 因为在很早的时候 我就找到了我所钟爱的动向
+- 因为在很早的时候 我就找到了我所钟爱的东西
 
 - Wiz and I started Apple in my parent's garage When I was 20
 - 二十岁的时候 沃兹和我就在父母的车库里面开创了苹果公司
@@ -193,7 +193,7 @@ description:    从伟人哪里获得对人生的理解
 - 我觉得我很令上一代的创业家们失望
 
 - That I had dropped the bation as it was being passed to me 
-- 我吧他们交给我的接力棒弄丢了
+- 我把他们交给我的接力棒弄丢了
 
 - I met with David Packard and Bob nonce
 - 我和戴维·帕卡德 鲍勃·诺伊斯见面
