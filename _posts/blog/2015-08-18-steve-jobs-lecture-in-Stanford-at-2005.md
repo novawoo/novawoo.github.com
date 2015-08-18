@@ -455,11 +455,15 @@ description:    从伟人哪里获得对人生的理解
 - **So you have to trust that the dots will somehow connect in your future.**
     - **所以你要相信，你现在所体会的东西，将在你的未来连接在一起。**
 
+**要活好当下**
+
 ### 爱与失去
 - **I'm convinced that the only thing that kept me going was that I loved what I did**
     - **我很清楚唯一使我一直走下去的就是做我无比钟爱的事情**
 - **You've got to find what you love and that is as true for your work as it for your lovers**
     - **你需要去找到你所爱的东西，这是一条适合工作和爱情的信条**
+
+**去做自己热爱的事**
 
 ### 死亡
 - **Have the courage to follow your heart and intuition**
@@ -468,6 +472,8 @@ description:    从伟人哪里获得对人生的理解
     - **在某种程度上 他们知道你要成为什么样的人**
 - **Stay Hungry Stay Foolish**
     - **求知若饥 虚心若愚**
+
+**听从内心的呼唤**
 
 ## 本文的修订历史
 - v1 2015-08-18 初始版本
