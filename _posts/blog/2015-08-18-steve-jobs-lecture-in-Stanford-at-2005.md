@@ -11,8 +11,7 @@ description:    从伟人哪里获得对人生的理解
 ## 讲话内容
 
 ### 开场白
-Thank You. I am honored to be with you today at your commencement from one of the finest universities in the world.
-
+    Thank You. I am honored to be with you today at your commencement from one of the finest universities in the world.
 谢谢。今天很荣幸能和你们一起参加世界上最好大学的毕业典礼。
  
  
@@ -22,28 +21,36 @@ Truth be told I nerver graduated from college and this is the closest I've erver
  
  
 Today I want to tell you three stories from my life. That's it. No big deal. Just three stories.
+
 今天我要告诉你，我的生命中的三个故事。就是这样。没什么大不了的。短短三个故事。
  
+### 第一个故事：连接点
 The first story is about connecting the dots.
+
 第一个故事是关于连接点。
  
-I dropped out of Reed College agter the first 6 mounths, but then stayed around as a drop-in for another 18 months or so before I really quit.
-我在里德(Reed coolege)待了六个月就办休学了。随后徘徊在那里，直到18个月后才真正退学。
+I dropped out of Reed College after the first 6 mounths, but then stayed around as a drop-in for another 18 months or so before I really quit.
+
+我在里德(Reed college)待了六个月就办休学了。随后徘徊在那里，直到18个月后才真正退学。
  
  
 So why did I drop out?
+
 我为什么退学呢？
  
  
 It started before I was born.
+
 是这样的在我出生之前。
  
  
 My biological mother was a young, unwed graduate student, and she decided to put me up for adoption.
+
 我的亲生母亲是一个年轻的、未婚的学生，她决定让别人收养我。
  
  
 She felt very strongly that I should be adopted by college fraduates, so everything was all set for me to be adopted at birth by a lawyer and his wife.
+
 这个必须是个大学毕业生，所以我出生时她就准备让我被一对律师夫妇收养。
  
  
@@ -678,5 +685,5 @@ Thank you all very much
 
 
 ## 本文的修订历史
-- v1 初始版本 2015-08-18 
+- v1 2015-08-18 初始版本
 
