@@ -1,19 +1,17 @@
 ---
 layout:     post
-title:      乔布斯2005年在斯坦福大学毕业典礼上的讲话
+title:      乔布斯2005年在斯坦福大学毕业典礼上的讲话摘录
 category:   blog
 description:    从伟人哪里获得对人生的理解
 ---
 
-## 为什么要摘录讲话的内容
+## 为什么要摘录
 一次偶然的机会，看了乔布斯2005年在斯坦福大学毕业典礼上的讲话([视频地址](http://v.youku.com/v_show/id_XMjk4Mzk4Mjg0.html))，他讲了三个故事，非常有深意，我很受鼓舞，所以就花时间把讲话的内容摘录下了，虽然前后花了3个多小时，但这一定是值得的。
 
 ## 讲话内容
 
 ### 开场白
-<pre class="brush:java">
-Thank You. I am honored to be with you today at your commencement from one of the finest universities in the world. 
-</pre>
+- Thank You. I am honored to be with you today at your commencement from one of the finest universities in the world.
 谢谢。今天很荣幸能和你们一起参加世界上最好大学的毕业典礼。
  
  
