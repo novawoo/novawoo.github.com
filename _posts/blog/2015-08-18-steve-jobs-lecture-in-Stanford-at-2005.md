@@ -5,10 +5,10 @@ category:   blog
 description:    从伟人哪里获得对人生的理解
 ---
 
-## 为什么要摘录
+## 一、为什么要摘录
 一次偶然的机会，看了乔布斯2005年在斯坦福大学毕业典礼上的讲话([视频地址](http://v.youku.com/v_show/id_XMjk4Mzk4Mjg0.html))，他讲了三个故事，非常有深意，我很受鼓舞，所以就花时间把讲话的内容摘录下了，虽然前后花了4个多小时，但这一定是值得的。
 
-## 讲话内容
+## 二、讲话内容
 
 ### 开场白
 - Thank You. I am honored to be with you today at your commencement from one of the finest universities in the world.
@@ -450,7 +450,7 @@ description:    从伟人哪里获得对人生的理解
 - Thank you all very much
     - 非常感谢你们
 
-## 回味
+## 三、回味
 ### 连接点
 - **So you have to trust that the dots will somehow connect in your future.**
     - **所以你要相信，你现在所体会的东西，将在你的未来连接在一起。**
