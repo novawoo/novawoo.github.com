@@ -5,14 +5,19 @@ category:   blog
 description:    从伟人哪里获得对人生的理解
 ---
 
+## 为什么要摘录讲话的内容
+一次偶然的机会，看了乔布斯2005年在斯坦福大学毕业典礼上的讲话([视频地址](http://v.youku.com/v_show/id_XMjk4Mzk4Mjg0.html))，他讲了三个故事，非常有深意，我很受鼓舞，所以就花时间把讲话的内容摘录下了，虽然前后花了3个多小时，但这一定是值得的。
 
 ## 讲话内容
 
+### 开场白
 Thank You. I am honored to be with you today at your commencement from one of the finest universities in the world.
-谢谢。今天很荣幸能和你们一起参加毕业典礼在这所世界上最好的大学里。
+
+谢谢。今天很荣幸能和你们一起参加世界上最好大学的毕业典礼。
  
  
 Truth be told I nerver graduated from college and this is the closest I've erver gotten to a college graduation.
+
 说实话，我没有从大学毕业，这是我离大学毕业最近的一刻。
  
  
@@ -672,5 +677,6 @@ Thank you all very much
 
 
 
-[视频地址](http://v.youku.com/v_show/id_XMjk4Mzk4Mjg0.html)
+## 本文的修订历史
+- v1 初始版本 2015-08-18 
 
