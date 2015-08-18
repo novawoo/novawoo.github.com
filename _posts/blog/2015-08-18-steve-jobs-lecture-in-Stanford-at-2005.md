@@ -672,5 +672,5 @@ Thank you all very much
 
 
 
-(视频地址)[http://v.youku.com/v_show/id_XMjk4Mzk4Mjg0.html]
+[视频地址](http://v.youku.com/v_show/id_XMjk4Mzk4Mjg0.html)
 
