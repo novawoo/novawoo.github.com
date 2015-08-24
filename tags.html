@@ -13,7 +13,7 @@ group: navigation
 
 
 {% for tag in site.tags %} 
-  <ul>
+  <ul class="tag_box">
   <li class="listing-seperator" id="{{ tag[0] }}-ref">{{ tag[0] }}</li>
     {% assign pages_list = tag[1] %}  
     {% include JB/pages_list %}

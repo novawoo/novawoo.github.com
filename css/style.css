@@ -574,3 +574,7 @@ border-color:#d0d0d0;
 display:list-item;
 list-style-type:none;
 }
+
+.tag_box{
+margin-left:0em;
+}
