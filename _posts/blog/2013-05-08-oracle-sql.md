@@ -3,10 +3,9 @@ layout:     post
 title:      SQL in Oracle
 category:   Oracle & SQL
 description:   SQL基础
-tags: 
- - oracle
- - sql
+tags: [oracle, sql]
 ---
+
 ## 1. 简介
 ### 1.1 Oracle公司介绍
 
