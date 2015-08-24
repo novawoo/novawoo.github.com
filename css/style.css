@@ -559,3 +559,18 @@ pre code, .highlight code{margin: 0; padding: 0; background-color: transparent; 
 #menuIndex ul li.on{background-color:#eee}
 #menuIndex li.h1{font-size:14px;font-weight:normal;padding-left:0;margin-bottom:10px;}
 #menuIndex li.h3{padding-left:25px;}
+
+.listing-seperator{
+list-style-type:none;
+font-weight:bold;
+margin:20px 0  0px;
+padding:4px;
+border-width:0 0 1px 0;
+border-style:dashed;
+border-radius:2px;
+border-color:#d0d0d0;
+}
+.listing-item{
+display:list-item;
+list-style-type:none;
+}
