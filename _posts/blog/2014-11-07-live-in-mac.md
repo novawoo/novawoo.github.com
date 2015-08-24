@@ -3,6 +3,7 @@ layout:     post
 title:      live in mac
 category:   blog
 description:    记录如何在mac中工作、学习
+tags: [记录, 工作环境]
 ---
 
 ## utils 
