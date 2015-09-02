@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      【转载】少做职业规划，多做能力规划
-category:   blog
+title:      少做职业规划，多做能力规划
+category:   好文转载
 description:    能帮助我解决迷茫确定目标的文章
 tags: [职业规划]
 ---
