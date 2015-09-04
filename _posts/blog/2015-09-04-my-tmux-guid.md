@@ -32,6 +32,68 @@ tags: [tmux, Mac]
     > tmux rename-session -t <oldSessionName> <newSessionName>
     > tmux rename-window -t <oldWindowName> <newWindowName>
 
+## 重中之重--tmux的配置文件
+我的配置文件如下：
+
+    # 设置前缀为Ctrl + w
+    set -g prefix C-w
+
+    # 解除Ctrl+b
+    unbind C-b
+
+    # 将r 设置为加载配置文件，并显示“reloaded!”信息
+    bind -r source-file ~/.tmux.conf \; display "Reloaded!"
+
+    # split window
+    unbind '"'
+    # vertical split (<prefix> -)
+    bind - splitw -v
+    unbind %
+    # horizontal split (<prefix> |)
+    bind | splitw -h
+
+    # select panel，方便在panel间切换，按键类似于vim
+    # up
+    bind k select-pane -U
+    # down
+    bind j select-pane -D
+    # left
+    bind h select-pane -L
+    # right
+    bind l select-pane -R
+
+    # resize panel
+    # upward
+    bind -r K resizep -U 5
+    # downward
+    bind -r J resizep -D 5
+    # leftward
+    bind -r H resizep -L 5
+    # rightward
+    bind -r L resizep -R 5
+
+    # copy-mode 将快捷键设置为vi模式
+    setw -g mode-keys vi
+    # enter copy mode (<prefix> Escape)
+    bind Escape copy-mode
+    # select (v)
+    bind -t vi-copy v begin-selection
+    # copy (y)
+    bind -t vi-copy y copy-selection
+    # paste buffer (prefix Ctrl+p)
+    bind Ctrl-p pasted
+
+    # zoom pana <-> window
+    # http://tmux.svn.sourceforge.net/viewvc/tmux/trunk/examples/tmux-zoom.sh
+    # bind ^z run "tmux-zoom"
+    # 新版本已经自带这个功能  <prefix> z
+
+    # app
+    # htop (<prefix> !)
+    bind ! splitw -h htop
+    # man (<prefix> m)
+    bind m command-prompt "splitw -h 'exec man %%'"
+
 
 ## 版本修订记录
  V1 2015-09-01 初始版本
