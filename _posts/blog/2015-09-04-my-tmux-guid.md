@@ -21,6 +21,7 @@ tags: [tmux, Mac]
 
 - 基础&配置1:[tmux基础](http://mingxinglai.com/cn/2012/09/tmux/)
 - 基础&配置2:[终端环境之tmux](http://foocoder.com/blog/zhong-duan-huan-jing-zhi-tmux.html/)
+- 基础&配置3:[OS X 下 terminal 中的复制粘贴](http://copri.me/post/copy-and-paste-under-os-x-terminal.html)
 - 常用:[tmux shortcuts & cheatsheet](https://gist.github.com/MohamedAlaa/2961058)
 - 好基友:[tmux最佳伴侣：tmuxinator](http://zuyunfei.com/2013/08/09/tmuxinator-best-mate-of-tmux/)
 - 扩展:[文本三巨头：zsh、tmux 和 vim](http://blog.jobbole.com/86571/)
