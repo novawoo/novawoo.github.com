@@ -25,6 +25,7 @@ tags: [tmux, Mac]
 - 常用:[tmux shortcuts & cheatsheet](https://gist.github.com/MohamedAlaa/2961058)
 - 好基友:[tmux最佳伴侣：tmuxinator](http://zuyunfei.com/2013/08/09/tmuxinator-best-mate-of-tmux/)
 - 扩展:[文本三巨头：zsh、tmux 和 vim](http://blog.jobbole.com/86571/)
+- [Mac osx保存和恢复tmux会话](http://cssor.com/save-and-restore-tmux-session-for-computer-reboot.html)
 
 ## tmux session/window管理
 ### 显示存在的session和window
