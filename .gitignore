@@ -1,4 +1,5 @@
 _site/*
+.idea/
 _theme_packages/*
 
 Thumbs.db
