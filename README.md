@@ -8,7 +8,10 @@
 博客主题：
 ===
 
-来源于：[http://beiyuu.com](https://github.com/beiyuu/beiyuu.github.com) [http://kafeitu.me](https://github.com/henryyan/henryyan.github.com) 和 [http://gtd.doit.im/](http://gtd.doit.im/) 
+来源于：
+- [http://beiyuu.com](https://github.com/beiyuu/beiyuu.github.com)
+- [http://kafeitu.me](https://github.com/henryyan/henryyan.github.com)
+- [http://gtd.doit.im/](http://gtd.doit.im/)
 
 
 插件配置：
