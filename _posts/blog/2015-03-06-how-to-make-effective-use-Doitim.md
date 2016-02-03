@@ -41,7 +41,10 @@ description:    我使用Doit.im的笔记
 ## 二、我的实践
 在Doit中建立一个任务，我称为`unbroken time事项`并把这个任务重复周期设置成每天，这样就将上面梳理出的流程，固化到了行动中。
 
+
 `unbroken time事项`如下：
+
+
 ![步骤](/images/2015-03-06/unbroken-time.png)
 
 ## 本文的修订历史
