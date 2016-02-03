@@ -29,7 +29,7 @@ tags: [java, javaee, Spring]
 通过上图，可以看出整个`Spring Platform`分为三大块：
 
 1. 基础(`Foundation`)部分：提供框架、安全、Groovy、反应堆、结构化和非结构化数据的访问、整合、批处理、大数据、web等功能的支持。
-2. 运行(`Execution`)部分：为了能快速的使用‘基础部分’提供的支持来构建自己的系统，`Spring IO Platform`特别提供了‘运行部分’的支持。‘执行层’根据不同系统的要求提供了不同的支持，`Spring XD`偏向于管道类系统的构建，`Boot`偏向于基础系统(JavaSE、Web)的构建。
+2. 运行(`Execution`)部分：为了能快速的使用‘基础部分’提供的支持来构建自己的系统，`Spring IO Platform`特别提供了‘运行部分’的支持。‘执行层’根据不同系统的要求提供了不同的支持，`Spring XD`偏向于管道类系统的构建，`Boot`偏向于基础系统(JavaSE、Web)的构建。在‘运行部分’，`Spring`中引入了一个叫做`DSR`的概念，`DSR`即`Domain-Specific Runtimes` 特定领域执行环境。扩展一下：与`Spring XD` `Boot` 类似的框架还有 `Grails`（基于`Groovy`语言的web全功能栈框架）。
 3. 协作(`Coordination`)部分：协作部分提供基于分布式架构的支持，当前的功能开正在不断成熟中。
 
 现在我们对`Spring`已经有了整体上的认识，那我们要使用`Spring IO Platform`中的哪些内容呢？结合当前的需要，我们正在构建一个基于关系型数据库的Web项目，所以我们要使用`基础部分`中的`Framework`、`Relational Data Access`、`web`，以及`运行部分`的`Boot`。
