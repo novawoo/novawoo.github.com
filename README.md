@@ -5,6 +5,10 @@
 
 使用Github + Jekyll + Markdown搭建。
 
+DNS服务商为 [新网](http://www.xinnet.com/)
+
+博客中的书籍使用 `gitbook`  构建。
+
 博客主题：
 ===
 
